@@ -13,7 +13,13 @@ import wx
 import matplotlib.pyplot as plt
 
 import PIL
-from PIL import Image, ImageOps
+import cv2
+from PIL import Image, ImageOps, ImageTk
+import Tkinter as tki
+import threading
+import datetime
+import imutils
+import os
 ################################################################################
 ##[y/n] user input simplified
 def userChoice(x): #input, output
@@ -31,12 +37,12 @@ mnist = keras.datasets.mnist
 ##Dataset details
 print("Training entries: {}, labels: {}".format(len(train_data), len(train_labels)))
 #60,000 28x28px images, 60,0000 labels
-print('\n', train_data[0])
-print(train_data[0][0], '\n', train_data[0][6])
-print(train_data[0][6][12])
+#print('\n', train_data[0])
+#print(train_data[0][0], '\n', train_data[0][6])
+#print(train_data[0][6][12])
 
-plt.imshow(train_data[0])
-plt.show()
+#plt.imshow(train_data[0])
+#plt.show()
 len(train_data[0]), len(train_data[1])
 ################################################################################
 ##useful f(x)
@@ -66,8 +72,10 @@ test_labels = to_categorical(test_labels, 10) # makes an array -> (0,1,...,10)
 ##Data Summary
 data_summary(train_data, train_labels, test_data, test_labels)
 ################################################################################
+################################################################################
 batchSize = 128
-epock = 5
+epock = input('How many epochs?: ')
+epock = np.int32(epock)
 ##Info from: https://www.kdnuggets.com/2018/06/basic-keras-neural-network-sequential-model.html
 model = Sequential()
 model.add(Dense(512, activation='relu', input_shape=(784,)))
@@ -88,6 +96,7 @@ model.fit(train_data, train_labels,
           verbose=1,
           validation_data=(test_data, test_labels))
 ################################################################################
+################################################################################
 ##Results
 results = model.evaluate(test_data, test_labels)
 print(results)
@@ -106,11 +115,11 @@ test_data = np.int32(test_data)
 test_data = test_data.reshape(test_data.shape[0], 28, 28) #28*28
 
 print('\n')
-for i in range(5):
+for i in range(10):
     print('\n')
     print('Data #', i, "\n", predictions[i], train_labels[i])
-    plt.imshow(train_data[i])
-    plt.show()
+#    plt.imshow(train_data[i])
+#    plt.show()
 #User chooses dataset
 userTestChoice = True
 
@@ -129,11 +138,11 @@ while userTestChoice == True:
 userImageChoice = True
 
 while userImageChoice == True:
-    userImage = input('Enter file name of image to test (On white background): ') ### TODO: add a bitmap here
-    #testImage = Image.FromFile(userImage)                             ##Useful link: https://docs.microsoft.com/en-us/dotnet/api/system.drawing.bitmap.-ctor?view=netframework-4.8#System_Drawing_Bitmap__ctor_System_Drawing_Image_System_Drawing_Size_
+    userImage = input('Enter file name of image to test (On white background): ')
 
-
-    img = Image.open(userImage)
+    dir='C:\\Users\\bremm\\Anaconda3\\envs\\myenv\\Images\\'
+    path=dir+userImage
+    img = Image.open(path)
     plt.imshow(img)
     plt.show()
     ##image Preprocessing
@@ -143,14 +152,35 @@ while userImageChoice == True:
 
     plt.imshow(img)
     plt.show()
-    #converts to an array of floats
+    #converts to an array of ints
     userData = np.array(img)
+    userData = np.int32(userData)
+    print(userData)
+    print(userData.dtype)
+    print(userData.shape)
+    #userData = np.int32(userData)
+
+    #from [0,255] to [0,1]
     userData = np.float32(userData)
     userData /= 255
-    print(userData)
+    #userData = userData.flatten()
+    userData = np.reshape(userData, (1,784))
+#    print(userData)
+#    print(userData.shape)
+
     #Makes a prediction
-    userGuess = model.predict_classes(userData)
-    print("Predicted: ", userGuess) #results
+    userGuess = model.predict(userData)
+    #print("Predicted: ", userGuess) #results
+    userGuess *= 100
+    userGuess = np.round(userGuess, 3)
+    userGuess = np.reshape(userGuess, (10, 1))
+    ############################################################################
+    ##print out it's guess for the inputted image
+    print(userGuess.shape)
+    print('\n')
+    for i in range(len(userGuess)):
+    #print(userGuess)
+        print(userGuess[i], '% sure the number is a', i)
     ############################################################################
     tempUserImageChoice = input('Another Image? [y/n]: ')
     userImageChoice = userChoice(tempUserImageChoice)
