@@ -717,6 +717,7 @@ id icon_group
 id ifRoom
 id image
 id imageView
+id image_view
 id info
 id invisible
 id italic
