@@ -14,6 +14,8 @@ public class DisplayPlantTypes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_plant_types);
 
+        /**Do note that there is a cleaner way to do this, but I don't quite understand
+         * how it works so I'm leaving the buttons like this for now*/
         //Does this work???
         Button goToCamera = (Button) findViewById(R.id.toCamera);
         goToCamera.setOnClickListener(new View.OnClickListener() {
@@ -24,7 +26,6 @@ public class DisplayPlantTypes extends AppCompatActivity {
             }
 
         });
-
         //Does this work too?? And menu = mainActivity.java
         Button goToMenu = (Button) findViewById(R.id.toMenu);
         goToMenu.setOnClickListener(new View.OnClickListener() {
@@ -35,5 +36,9 @@ public class DisplayPlantTypes extends AppCompatActivity {
             }
 
         });
+    }
+
+    private void defineButtons() {
+
     }
 }
