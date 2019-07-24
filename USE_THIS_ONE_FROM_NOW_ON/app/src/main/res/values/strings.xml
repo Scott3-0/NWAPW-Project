@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">PlantIdentifier</string>
     <string name="welcome">Welcome!</string>
-    <string name="text_filler">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="text_filler">Do you often see plants and wish you knew what they were? This app is for you! \"Identify Plants\" will prompt you to choose a photo of a plant from your phone. You will then know what your plant is and have the opportunity to look up more information about it. Enjoy!</string>
     <string name="identify_plants">Identify plants!</string>
     <string name="search_plants">Search Plants</string>
     <string name="menu">Menu</string>
+    <string name="plant_is">Your plant is most likely a(n)</string>
+    <string name="more_possibilities">more possibilities</string>
+    <string name="plant_type">daisy</string>
+    <string name="temporary">results</string>
 </resources>

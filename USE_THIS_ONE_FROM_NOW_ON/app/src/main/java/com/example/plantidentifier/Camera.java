@@ -50,6 +50,18 @@ public class Camera extends AppCompatActivity {
                 }
             }
         });
+        setContentView(R.layout.activity_camera);
+
+        //button sends user to menu
+        Button goToMenu = (Button) findViewById(R.id.menuButton);
+        goToMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Camera.this, MainActivity.class);
+                startActivity(intent);
+            }
+
+        });
     }
 
     private void pickImageFromGallery() {
