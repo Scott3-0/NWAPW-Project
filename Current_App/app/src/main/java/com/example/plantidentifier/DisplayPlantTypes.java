@@ -24,9 +24,10 @@ public class DisplayPlantTypes extends AppCompatActivity {
             }
 
         });
+
         //Does this work too?? And menu = mainActivity.java
         Button goToMenu = (Button) findViewById(R.id.toMenu);
-        goToCamera.setOnClickListener(new View.OnClickListener() {
+        goToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DisplayPlantTypes.this, MainActivity.class);
