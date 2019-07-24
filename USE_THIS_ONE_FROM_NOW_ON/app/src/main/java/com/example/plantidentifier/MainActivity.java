@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //button goes to image selection screen
         Button goToCamera = (Button) findViewById(R.id.toCamera);
         goToCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        //button goes to results screen
         Button goToResults = (Button) findViewById(R.id.temporaryButton);
         goToResults.setOnClickListener(new View.OnClickListener() {
             @Override

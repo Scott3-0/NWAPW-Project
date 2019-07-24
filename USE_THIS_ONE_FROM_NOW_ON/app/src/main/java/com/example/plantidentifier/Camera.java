@@ -14,7 +14,7 @@ public class Camera extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
-        //button sends user to menu
+        //button goes to menu screen
         Button goToMenu = (Button) findViewById(R.id.menuButton);
         goToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
