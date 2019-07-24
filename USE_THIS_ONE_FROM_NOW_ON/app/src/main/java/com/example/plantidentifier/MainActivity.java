@@ -11,6 +11,12 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    private String plant_type="daisy";
+
+    protected void setPlant_Type(String newPlant_type) {
+        plant_type=newPlant_type;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,5 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
     }
+
 }

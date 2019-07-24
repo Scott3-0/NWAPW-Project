@@ -716,7 +716,7 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
+id imageButton
 id image_view
 id info
 id invisible
@@ -726,6 +726,7 @@ id line1
 id line3
 id listMode
 id list_item
+id menuButton
 id message
 id middle
 id multiply
@@ -742,6 +743,8 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id resultConstraintLayout
+id resultTextView
 id right
 id right_icon
 id right_side
@@ -779,6 +782,7 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id temporaryButton
 id text
 id text2
 id textSpacerNoButtons
@@ -889,11 +893,16 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string choose_image
 string identify_plants
 string menu
+string more_possibilities
+string plant_is
+string plant_type
 string search_menu_title
 string search_plants
 string status_bar_notification_info_overflow
+string temporary
 string text_filler
 string welcome
 style AlertDialog_AppCompat

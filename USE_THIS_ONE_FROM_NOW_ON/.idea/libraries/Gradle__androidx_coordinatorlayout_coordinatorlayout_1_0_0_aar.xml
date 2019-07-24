@@ -1,19 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.0.0@aar">
     <ANNOTATIONS>
-<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5a81bfd7c3aaf43f7683e3be9b74db5/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5a81bfd7c3aaf43f7683e3be9b74db5/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f5a81bfd7c3aaf43f7683e3be9b74db5/res" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0917d7f24b8f36e50d8d41d5e4da5eff/annotations.zip!/" />
-    </ANNOTATIONS>
-    <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0917d7f24b8f36e50d8d41d5e4da5eff/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0917d7f24b8f36e50d8d41d5e4da5eff/jars/classes.jar!/" />
->>>>>>> Bronte's-Branch
     </CLASSES>
     <JAVADOC />
     <SOURCES>
