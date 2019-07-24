@@ -1,5 +1,39 @@
 -- Merging decision tree log ---
 manifest
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0975e4d513e4545886cdfd5cf5300214/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3373cd864f86d848a185b48fe278b679/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/507ac10f122a10296134560df5751a0d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/db550dd3999c8b58a743f4743879f7ef/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/dccf64e7d0ca5821dd039e0661125414/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/1767eb0e2713b19b900734a9822355ff/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/c8b864a2b83f2e6cd5af5882cda26f36/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/be2b1924d25ae8fdc6e23a69845bb310/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f5a81bfd7c3aaf43f7683e3be9b74db5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/c8149c260611c9cff9c724c310aaeb3b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7824fea23ecdc6343388e70e876a2285/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/402ce492193040195b62cb265d47369a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/673b7613e5c36c7e7848dd2efbdf904a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/68cff62ee7dfe5e3bf796484e9fcca5f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7b117cd9d46297da758923889889be8b/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3ed93b745b341608a8a55eedc46cc87f/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/32b18f3094506f91d191fa303deabce3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0e4ed001938ca4372d489bd2e8cdd6c2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/04f9e77d4cd2c41d8951de4e3edb788d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6623fc3d543ceca85feb3372384b3ddd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f4f505e73fe87a788c448c5f91f335de/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6fa0f8aa844c07a50cb41c0d8da3efd3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6d35281b17efdcbdc48c26f739865991/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/8b38cee3270bd4e285b427fd4010af1d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/80be352834a2656c8d7b0c556f6bf89f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f74640f3f526288cd5142b7d6b855ddb/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
 ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-23:12
@@ -39,20 +73,31 @@ INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:3:5-42
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:5:22-77
 application
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:7:5-23:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0975e4d513e4545886cdfd5cf5300214/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0975e4d513e4545886cdfd5cf5300214/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7b117cd9d46297da758923889889be8b/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7b117cd9d46297da758923889889be8b/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3ed93b745b341608a8a55eedc46cc87f/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3ed93b745b341608a8a55eedc46cc87f/AndroidManifest.xml:22:5-23:19
 ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:5:5-21:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/Bronte/.gradle/caches/transforms-2/files-2.1/1471933d34e45cd98a911e4f18526cff/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/Bronte/.gradle/caches/transforms-2/files-2.1/1471933d34e45cd98a911e4f18526cff/AndroidManifest.xml:22:5-20
@@ -63,42 +108,101 @@ MERGED from [androidx.core:core:1.0.1] /Users/Bronte/.gradle/caches/transforms-2
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/Bronte/.gradle/caches/transforms-2/files-2.1/0395485f43fe0155044c018bc9d06018/AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/Bronte/.gradle/caches/transforms-2/files-2.1/0395485f43fe0155044c018bc9d06018/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.1] /Users/Bronte/.gradle/caches/transforms-2/files-2.1/9ce28fd2c015b859b1a6e19749e3f9ea/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7b117cd9d46297da758923889889be8b/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:13:9-40
 activity#com.example.plantidentifier.DisplayPlantTypes
-ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:12:9-64
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:14:9-64
 	android:name
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:12:19-52
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:14:19-52
 activity#com.example.plantidentifier.Camera
-ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:13:9-44
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:15:9-44
 	android:name
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:13:19-41
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:15:19-41
 activity#com.example.plantidentifier.MainActivity
-ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:14:19-47
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0975e4d513e4545886cdfd5cf5300214/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0975e4d513e4545886cdfd5cf5300214/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3373cd864f86d848a185b48fe278b679/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3373cd864f86d848a185b48fe278b679/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/507ac10f122a10296134560df5751a0d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/507ac10f122a10296134560df5751a0d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/db550dd3999c8b58a743f4743879f7ef/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/db550dd3999c8b58a743f4743879f7ef/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/dccf64e7d0ca5821dd039e0661125414/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/dccf64e7d0ca5821dd039e0661125414/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/1767eb0e2713b19b900734a9822355ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/1767eb0e2713b19b900734a9822355ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/c8b864a2b83f2e6cd5af5882cda26f36/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/c8b864a2b83f2e6cd5af5882cda26f36/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/be2b1924d25ae8fdc6e23a69845bb310/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/be2b1924d25ae8fdc6e23a69845bb310/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f5a81bfd7c3aaf43f7683e3be9b74db5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f5a81bfd7c3aaf43f7683e3be9b74db5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/c8149c260611c9cff9c724c310aaeb3b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/c8149c260611c9cff9c724c310aaeb3b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7824fea23ecdc6343388e70e876a2285/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7824fea23ecdc6343388e70e876a2285/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/402ce492193040195b62cb265d47369a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/402ce492193040195b62cb265d47369a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/673b7613e5c36c7e7848dd2efbdf904a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/673b7613e5c36c7e7848dd2efbdf904a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/68cff62ee7dfe5e3bf796484e9fcca5f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/68cff62ee7dfe5e3bf796484e9fcca5f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7b117cd9d46297da758923889889be8b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/7b117cd9d46297da758923889889be8b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3ed93b745b341608a8a55eedc46cc87f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/3ed93b745b341608a8a55eedc46cc87f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/32b18f3094506f91d191fa303deabce3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/32b18f3094506f91d191fa303deabce3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0e4ed001938ca4372d489bd2e8cdd6c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/0e4ed001938ca4372d489bd2e8cdd6c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/04f9e77d4cd2c41d8951de4e3edb788d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/04f9e77d4cd2c41d8951de4e3edb788d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6623fc3d543ceca85feb3372384b3ddd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6623fc3d543ceca85feb3372384b3ddd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f4f505e73fe87a788c448c5f91f335de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f4f505e73fe87a788c448c5f91f335de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6fa0f8aa844c07a50cb41c0d8da3efd3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6fa0f8aa844c07a50cb41c0d8da3efd3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6d35281b17efdcbdc48c26f739865991/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/6d35281b17efdcbdc48c26f739865991/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/8b38cee3270bd4e285b427fd4010af1d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/8b38cee3270bd4e285b427fd4010af1d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/80be352834a2656c8d7b0c556f6bf89f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/80be352834a2656c8d7b0c556f6bf89f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f74640f3f526288cd5142b7d6b855ddb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/f74640f3f526288cd5142b7d6b855ddb/AndroidManifest.xml:20:5-44
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
@@ -167,10 +271,10 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/Bronte/.gradle/caches
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
