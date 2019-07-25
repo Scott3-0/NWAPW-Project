@@ -16,9 +16,6 @@ import android.widget.Toast;
 
 public class Camera extends AppCompatActivity {
 
-    ImageView imageView;
-    Button chooseButton;
-
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
@@ -27,11 +24,7 @@ public class Camera extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
-        //VIEWS
-        imageView = findViewById(R.id.image_view);
-        chooseButton = findViewById(R.id.choose_image_btn);
-
-        //Handle Button Click
+        Button chooseButton = (Button) findViewById(R.id.choose_image_btn);
         chooseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,18 +43,9 @@ public class Camera extends AppCompatActivity {
                 }
             }
         });
-        setContentView(R.layout.activity_camera);
 
-        //button sends user to menu
-        Button goToMenu = (Button) findViewById(R.id.menuButton);
-        goToMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Camera.this, MainActivity.class);
-                startActivity(intent);
-            }
 
-        });
+
     }
 
     private void pickImageFromGallery() {
@@ -72,22 +56,22 @@ public class Camera extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch(requestCode) {
-            case PERMISSION_CODE: {
+        if(requestCode == PERMISSION_CODE) {
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     pickImageFromGallery();
                 }
                 else {
                     Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
                 }
-            }
         }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        ImageView imageView = findViewById(R.id.image_view);
         if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
             imageView.setImageURI(data.getData());
         }
     }
+
 }
