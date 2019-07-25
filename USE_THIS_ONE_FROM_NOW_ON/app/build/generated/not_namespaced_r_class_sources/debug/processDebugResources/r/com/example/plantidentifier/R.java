@@ -613,6 +613,7 @@ public final class R {
      */
     public static final int borderWidth=0x7f03003f;
     /**
+     * Style for buttons without an explicit border, often used in groups.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -620,7 +621,6 @@ public final class R {
      */
     public static final int borderlessButtonStyle=0x7f030040;
     /**
-     * Style for buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -628,7 +628,6 @@ public final class R {
      */
     public static final int bottomAppBarStyle=0x7f030041;
     /**
-     * Style for the "negative" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -636,7 +635,6 @@ public final class R {
      */
     public static final int bottomNavigationStyle=0x7f030042;
     /**
-     * Style for the "neutral" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -644,7 +642,6 @@ public final class R {
      */
     public static final int bottomSheetDialogTheme=0x7f030043;
     /**
-     * Style for the "positive" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -725,6 +722,7 @@ public final class R {
      */
     public static final int boxStrokeWidth=0x7f03004d;
     /**
+     * Style for buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -732,6 +730,7 @@ public final class R {
      */
     public static final int buttonBarButtonStyle=0x7f03004e;
     /**
+     * Style for the "negative" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -739,6 +738,7 @@ public final class R {
      */
     public static final int buttonBarNegativeButtonStyle=0x7f03004f;
     /**
+     * Style for the "neutral" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -746,6 +746,7 @@ public final class R {
      */
     public static final int buttonBarNeutralButtonStyle=0x7f030050;
     /**
+     * Style for the "positive" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -753,6 +754,7 @@ public final class R {
      */
     public static final int buttonBarPositiveButtonStyle=0x7f030051;
     /**
+     * Style for button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -832,12 +834,14 @@ public final class R {
      */
     public static final int buttonTintMode=0x7f030059;
     /**
+     * Background color for CardView.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int cardBackgroundColor=0x7f03005a;
     /**
+     * Corner radius for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -846,6 +850,7 @@ public final class R {
      */
     public static final int cardCornerRadius=0x7f03005b;
     /**
+     * Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -854,6 +859,7 @@ public final class R {
      */
     public static final int cardElevation=0x7f03005c;
     /**
+     * Maximum Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -862,11 +868,13 @@ public final class R {
      */
     public static final int cardMaxElevation=0x7f03005d;
     /**
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int cardPreventCornerOverlap=0x7f03005e;
     /**
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -884,6 +892,7 @@ public final class R {
      */
     public static final int chainUseRtl=0x7f030061;
     /**
+     * Default Checkbox style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -891,7 +900,6 @@ public final class R {
      */
     public static final int checkboxStyle=0x7f030062;
     /**
-     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -899,7 +907,6 @@ public final class R {
      */
     public static final int checkedChip=0x7f030063;
     /**
-     * Specifies a layout to use for the "close" item at the starting edge.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -917,6 +924,7 @@ public final class R {
      */
     public static final int checkedIconVisible=0x7f030066;
     /**
+     * Default CheckedTextView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1052,6 +1060,7 @@ public final class R {
      */
     public static final int chipStyle=0x7f030079;
     /**
+     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1099,6 +1108,7 @@ public final class R {
      */
     public static final int closeIconVisible=0x7f030080;
     /**
+     * Specifies a layout to use for the "close" item at the starting edge.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1106,6 +1116,7 @@ public final class R {
      */
     public static final int closeItemLayout=0x7f030081;
     /**
+     * Text to set as the content description for the collapse button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -1146,6 +1157,7 @@ public final class R {
      */
     public static final int collapsedTitleTextAppearance=0x7f030085;
     /**
+     * The drawing color for the bars
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1223,19 +1235,20 @@ public final class R {
      */
     public static final int colorPrimaryDark=0x7f03008f;
     /**
-     * The color applied to framework switch thumbs in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorSecondary=0x7f030090;
     /**
+     * The color applied to framework switch thumbs in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorSwitchThumbNormal=0x7f030091;
     /**
+     * Commit icon shown in the query suggestion row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1328,6 +1341,7 @@ public final class R {
      */
     public static final int contentInsetStartWithNavigation=0x7f03009c;
     /**
+     * Inner padding between the edges of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1336,6 +1350,7 @@ public final class R {
      */
     public static final int contentPadding=0x7f03009d;
     /**
+     * Inner padding between the bottom edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1344,6 +1359,7 @@ public final class R {
      */
     public static final int contentPaddingBottom=0x7f03009e;
     /**
+     * Inner padding between the left edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1352,6 +1368,7 @@ public final class R {
      */
     public static final int contentPaddingLeft=0x7f03009f;
     /**
+     * Inner padding between the right edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1360,6 +1377,7 @@ public final class R {
      */
     public static final int contentPaddingRight=0x7f0300a0;
     /**
+     * Inner padding between the top edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1374,6 +1392,7 @@ public final class R {
      */
     public static final int contentScrim=0x7f0300a2;
     /**
+     * The background used by framework controls.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1419,6 +1438,7 @@ public final class R {
      */
     public static final int counterTextAppearance=0x7f0300a9;
     /**
+     * Specifies a layout for custom navigation. Overrides navigationMode.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1426,6 +1446,8 @@ public final class R {
      */
     public static final int customNavigationLayout=0x7f0300aa;
     /**
+     * Default query hint used when {@code queryHint} is undefined and
+     * the search view's {@code SearchableInfo} does not provide a hint.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -1611,6 +1633,11 @@ public final class R {
      */
     public static final int errorTextAppearance=0x7f0300c0;
     /**
+     * The drawable to show in the button for expanding the activities overflow popup.
+     * <strong>Note:</strong> Clients would like to set this drawable
+     * as a clue about the action the chosen activity will perform. For
+     * example, if share activity is to be chosen the drawable should
+     * give a clue that sharing is to be performed.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1780,6 +1807,8 @@ public final class R {
      */
     public static final int fastScrollVerticalTrackDrawable=0x7f0300d4;
     /**
+     * Distance from the top of the TextView to the first text baseline. If set, this
+     * overrides the value set for paddingTop.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1813,6 +1842,8 @@ public final class R {
      */
     public static final int floatingActionButtonStyle=0x7f0300d6;
     /**
+     * The reference to the font file to be used. This should be a file in the res/font folder
+     * and should therefore have an R reference value. E.g. @font/myfont
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1820,16 +1851,23 @@ public final class R {
      */
     public static final int font=0x7f0300d7;
     /**
+     * The attribute for the font family.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontFamily=0x7f0300d8;
     /**
+     * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderAuthority=0x7f0300d9;
     /**
+     * The sets of hashes for the certificates the provider should be signed with. This is
+     * used to verify the identity of the provider, and is only required if the provider is not
+     * part of the system image. This value may point to one list or a list of lists, where each
+     * individual list represents one collection of signature hashes. Refer to your font provider's
+     * documentation for these values.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1930,6 +1968,7 @@ public final class R {
      */
     public static final int foregroundInsidePadding=0x7f0300e2;
     /**
+     * The max gap between the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1971,7 +2010,6 @@ public final class R {
      */
     public static final int helperTextEnabled=0x7f0300e8;
     /**
-     * Specifies a drawable to use for the 'home as up' indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1979,7 +2017,6 @@ public final class R {
      */
     public static final int helperTextTextAppearance=0x7f0300e9;
     /**
-     * Specifies a layout to use for the "home" section of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1987,6 +2024,7 @@ public final class R {
      */
     public static final int hideMotionSpec=0x7f0300ea;
     /**
+     * Set true to hide the action bar on a vertical nested scroll of content.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2014,6 +2052,7 @@ public final class R {
      */
     public static final int hintTextAppearance=0x7f0300ef;
     /**
+     * Specifies a drawable to use for the 'home as up' indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2021,6 +2060,7 @@ public final class R {
      */
     public static final int homeAsUpIndicator=0x7f0300f0;
     /**
+     * Specifies a layout to use for the "home" section of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2087,6 +2127,7 @@ public final class R {
      */
     public static final int iconStartPadding=0x7f0300f8;
     /**
+     * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -2201,6 +2242,8 @@ public final class R {
      */
     public static final int itemIconTint=0x7f030106;
     /**
+     * Specifies padding that should be applied to the left and right sides of
+     * system-provided items in the bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2244,6 +2287,11 @@ public final class R {
      */
     public static final int itemTextColor=0x7f03010c;
     /**
+     * A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.
+     * Child views can refer to these keylines for alignment using
+     * layout_keyline="index" where index is a 0-based index into
+     * this array.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2265,6 +2313,8 @@ public final class R {
      */
     public static final int labelVisibilityMode=0x7f03010e;
     /**
+     * Distance from the bottom of the TextView to the last text baseline. If set, this
+     * overrides the value set for paddingBottom.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2281,11 +2331,21 @@ public final class R {
      */
     public static final int layout=0x7f030110;
     /**
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layoutManager=0x7f030111;
     /**
+     * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2912,6 +2972,8 @@ public final class R {
      */
     public static final int liftOnScroll=0x7f03014e;
     /**
+     * Explicit height between lines of text. If set, this will override the values set
+     * for lineSpacingExtra and lineSpacingMultiplier.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2928,6 +2990,7 @@ public final class R {
      */
     public static final int lineSpacing=0x7f030150;
     /**
+     * Drawable used as a background for selected list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3070,6 +3133,9 @@ public final class R {
      */
     public static final int maxImageSize=0x7f030162;
     /**
+     * When set to true, all children with a weight will be considered having
+     * the minimum size of the largest child. If false, all children are
+     * measured normally.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -3089,6 +3155,8 @@ public final class R {
      */
     public static final int multiChoiceItemLayout=0x7f030165;
     /**
+     * Text to set as the content description for the navigation button
+     * located at the start of the toolbar.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3124,6 +3192,8 @@ public final class R {
      */
     public static final int navigationViewStyle=0x7f030169;
     /**
+     * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
+     * keyboard. The values should be kept in sync with KeyEvent
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -3245,6 +3315,7 @@ public final class R {
      */
     public static final int passwordToggleTintMode=0x7f030177;
     /**
+     * Default PopupMenu style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3252,7 +3323,8 @@ public final class R {
      */
     public static final int popupMenuStyle=0x7f030178;
     /**
-     * Default PopupWindow style.
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3260,6 +3332,7 @@ public final class R {
      */
     public static final int popupTheme=0x7f030179;
     /**
+     * Default PopupWindow style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3267,12 +3340,12 @@ public final class R {
      */
     public static final int popupWindowStyle=0x7f03017a;
     /**
+     * Whether space should be reserved in layout when an icon is missing.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int preserveIconSpacing=0x7f03017b;
     /**
-     * Specifies the horizontal padding on either end for an embedded progress bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3281,6 +3354,7 @@ public final class R {
      */
     public static final int pressedTranslationZ=0x7f03017c;
     /**
+     * Specifies the horizontal padding on either end for an embedded progress bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3289,6 +3363,7 @@ public final class R {
      */
     public static final int progressBarPadding=0x7f03017d;
     /**
+     * Specifies a style resource to use for an embedded progress bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3375,6 +3450,7 @@ public final class R {
      */
     public static final int scrimVisibleHeightTrigger=0x7f030189;
     /**
+     * Search icon displayed as a text field hint
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3382,7 +3458,7 @@ public final class R {
      */
     public static final int searchHintIcon=0x7f03018a;
     /**
-     * Style for the search query widget.
+     * Search icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3390,13 +3466,21 @@ public final class R {
      */
     public static final int searchIcon=0x7f03018b;
     /**
-     * Default SeekBar style.
+     * Style for the search query widget.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
     public static final int searchViewStyle=0x7f03018c;
+    /**
+     * Default SeekBar style.
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int seekBarStyle=0x7f03018d;
     /**
      * A style that may be applied to buttons or other selectable items
      * that should react to pressed and focus states, but that do not
@@ -3406,7 +3490,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int seekBarStyle=0x7f03018d;
+    public static final int selectableItemBackground=0x7f03018e;
     /**
      * Background drawable for borderless standalone items that need focus/pressed states.
      * <p>May be a reference to another resource, in the form
@@ -3414,15 +3498,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackground=0x7f03018e;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
     public static final int selectableItemBackgroundBorderless=0x7f03018f;
     /**
+     * How this item should display in the Action Bar, if present.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -3469,6 +3547,7 @@ public final class R {
      */
     public static final int showMotionSpec=0x7f030192;
     /**
+     * Whether to draw on/off text.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -3486,7 +3565,6 @@ public final class R {
      */
     public static final int singleChoiceItemLayout=0x7f030195;
     /**
-     * Whether bars should rotate or not during transition
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -3504,7 +3582,6 @@ public final class R {
      */
     public static final int snackbarButtonStyle=0x7f030198;
     /**
-     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3516,13 +3593,13 @@ public final class R {
      */
     public static final int spanCount=0x7f03019a;
     /**
+     * Whether bars should rotate or not during transition
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int spinBars=0x7f03019b;
     /**
-     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
-     * when running on older versions of the platform.
+     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3530,6 +3607,7 @@ public final class R {
      */
     public static final int spinnerDropDownItemStyle=0x7f03019c;
     /**
+     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3537,12 +3615,14 @@ public final class R {
      */
     public static final int spinnerStyle=0x7f03019d;
     /**
+     * Whether to split the track and leave a gap for the thumb drawable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int splitTrack=0x7f03019e;
     /**
-     * Drawable to display behind the status bar when the view is set to draw behind it.
+     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
+     * when running on older versions of the platform.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3555,6 +3635,7 @@ public final class R {
      */
     public static final int stackFromEnd=0x7f0301a0;
     /**
+     * State identifier indicating the popup will be above the anchor.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -3580,6 +3661,7 @@ public final class R {
      */
     public static final int state_lifted=0x7f0301a5;
     /**
+     * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3610,6 +3692,7 @@ public final class R {
      */
     public static final int strokeWidth=0x7f0301a9;
     /**
+     * Drawable for the arrow icon indicating a particular item is a submenu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3695,7 +3778,6 @@ public final class R {
      */
     public static final int switchTextAppearance=0x7f0301b4;
     /**
-     * Present the text in ALL CAPS. This may use a small-caps form when available.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3881,7 +3963,6 @@ public final class R {
      */
     public static final int tabStyle=0x7f0301cb;
     /**
-     * The preferred TextAppearance for the primary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3900,6 +3981,7 @@ public final class R {
      */
     public static final int tabUnboundedRipple=0x7f0301ce;
     /**
+     * Present the text in ALL CAPS. This may use a small-caps form when available.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3909,7 +3991,6 @@ public final class R {
      */
     public static final int textAllCaps=0x7f0301cf;
     /**
-     * The preferred TextAppearance for the primary text of small list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3917,7 +3998,6 @@ public final class R {
      */
     public static final int textAppearanceBody1=0x7f0301d0;
     /**
-     * Text color, typeface, size, and style for header text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3925,7 +4005,6 @@ public final class R {
      */
     public static final int textAppearanceBody2=0x7f0301d1;
     /**
-     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3933,7 +4012,6 @@ public final class R {
      */
     public static final int textAppearanceButton=0x7f0301d2;
     /**
-     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3941,7 +4019,6 @@ public final class R {
      */
     public static final int textAppearanceCaption=0x7f0301d3;
     /**
-     * Text color, typeface, size, and style for small text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3949,7 +4026,6 @@ public final class R {
      */
     public static final int textAppearanceHeadline1=0x7f0301d4;
     /**
-     * Color of list item text in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3985,6 +4061,7 @@ public final class R {
      */
     public static final int textAppearanceHeadline6=0x7f0301d9;
     /**
+     * Text color, typeface, size, and style for the text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3992,6 +4069,7 @@ public final class R {
      */
     public static final int textAppearanceLargePopupMenu=0x7f0301da;
     /**
+     * The preferred TextAppearance for the primary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3999,6 +4077,7 @@ public final class R {
      */
     public static final int textAppearanceListItem=0x7f0301db;
     /**
+     * The preferred TextAppearance for the secondary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4006,6 +4085,7 @@ public final class R {
      */
     public static final int textAppearanceListItemSecondary=0x7f0301dc;
     /**
+     * The preferred TextAppearance for the primary text of small list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4020,6 +4100,7 @@ public final class R {
      */
     public static final int textAppearanceOverline=0x7f0301de;
     /**
+     * Text color, typeface, size, and style for header text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4027,6 +4108,7 @@ public final class R {
      */
     public static final int textAppearancePopupMenuHeader=0x7f0301df;
     /**
+     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4034,6 +4116,7 @@ public final class R {
      */
     public static final int textAppearanceSearchResultSubtitle=0x7f0301e0;
     /**
+     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4041,6 +4124,7 @@ public final class R {
      */
     public static final int textAppearanceSearchResultTitle=0x7f0301e1;
     /**
+     * Text color, typeface, size, and style for small text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4062,6 +4146,7 @@ public final class R {
      */
     public static final int textAppearanceSubtitle2=0x7f0301e4;
     /**
+     * Color of list item text in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4098,7 +4183,6 @@ public final class R {
      */
     public static final int textInputStyle=0x7f0301e8;
     /**
-     * The thickness (stroke size) for the bar paint
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4107,6 +4191,7 @@ public final class R {
      */
     public static final int textStartPadding=0x7f0301e9;
     /**
+     * Deprecated.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4114,6 +4199,7 @@ public final class R {
      */
     public static final int theme=0x7f0301ea;
     /**
+     * The thickness (stroke size) for the bar paint
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4122,6 +4208,7 @@ public final class R {
      */
     public static final int thickness=0x7f0301eb;
     /**
+     * Amount of padding on either side of text within the switch thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4130,6 +4217,7 @@ public final class R {
      */
     public static final int thumbTextPadding=0x7f0301ec;
     /**
+     * Tint to apply to the thumb drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -4234,6 +4322,8 @@ public final class R {
      */
     public static final int titleEnabled=0x7f0301f5;
     /**
+     * Specifies extra space on the left, start, right and end sides
+     * of the toolbar's title. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4293,6 +4383,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
+    @Deprecated
     public static final int titleMargins=0x7f0301fb;
     /**
      * <p>May be a reference to another resource, in the form
@@ -4317,7 +4408,6 @@ public final class R {
      */
     public static final int titleTextStyle=0x7f0301fe;
     /**
-     * Default Toolar NavigationButtonStyle
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4325,7 +4415,7 @@ public final class R {
      */
     public static final int toolbarId=0x7f0301ff;
     /**
-     * Default Toolbar style.
+     * Default Toolar NavigationButtonStyle
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4333,7 +4423,7 @@ public final class R {
      */
     public static final int toolbarNavigationButtonStyle=0x7f030200;
     /**
-     * Foreground color to use for tooltips
+     * Default Toolbar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4341,6 +4431,7 @@ public final class R {
      */
     public static final int toolbarStyle=0x7f030201;
     /**
+     * Foreground color to use for tooltips
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5910,7 +6001,7 @@ public final class R {
      * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.plantidentifier:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.plantidentifier:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeLayout com.example.plantidentifier:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.example.plantidentifier:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.example.plantidentifier:icon}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.plantidentifier:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
      * <tr><td><code>{@link #ActionBar_itemPadding com.example.plantidentifier:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.</td></tr>
@@ -6946,7 +7037,7 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.example.plantidentifier:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.example.plantidentifier:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #AppBarLayout_expanded com.example.plantidentifier:expanded}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.example.plantidentifier:liftOnScroll}</code></td><td></td></tr>
      * </table>
@@ -6997,8 +7088,9 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#elevation}
-     * attribute's value can be found in the {@link #AppBarLayout} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9588,7 +9680,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.example.plantidentifier:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.example.plantidentifier:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.example.plantidentifier:fabAlignmentMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.example.plantidentifier:fabCradleMargin}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.example.plantidentifier:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
@@ -9607,8 +9699,9 @@ public final class R {
       0x7f0300cd, 0x7f0300ec
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9690,7 +9783,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.example.plantidentifier:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.example.plantidentifier:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemBackground com.example.plantidentifier:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.example.plantidentifier:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.example.plantidentifier:itemIconSize}</code></td><td></td></tr>
@@ -9718,8 +9811,9 @@ public final class R {
       0x7f03010e, 0x7f030164
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#elevation}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9949,17 +10043,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.example.plantidentifier:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.example.plantidentifier:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.example.plantidentifier:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.example.plantidentifier:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.example.plantidentifier:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.example.plantidentifier:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.example.plantidentifier:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.example.plantidentifier:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.example.plantidentifier:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.example.plantidentifier:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.example.plantidentifier:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.example.plantidentifier:cardBackgroundColor}</code></td><td>Background color for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.example.plantidentifier:cardCornerRadius}</code></td><td>Corner radius for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.example.plantidentifier:cardElevation}</code></td><td>Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.example.plantidentifier:cardMaxElevation}</code></td><td>Maximum Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.example.plantidentifier:cardPreventCornerOverlap}</code></td><td>Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.example.plantidentifier:cardUseCompatPadding}</code></td><td>Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.example.plantidentifier:contentPadding}</code></td><td>Inner padding between the edges of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.example.plantidentifier:contentPaddingBottom}</code></td><td>Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.example.plantidentifier:contentPaddingLeft}</code></td><td>Inner padding between the left edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.example.plantidentifier:contentPaddingRight}</code></td><td>Inner padding between the right edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.example.plantidentifier:contentPaddingTop}</code></td><td>Inner padding between the top edge of the Card and children of the CardView.</td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -9982,8 +10076,9 @@ public final class R {
       0x7f0300a1
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum width
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9995,8 +10090,9 @@ public final class R {
      */
     public static final int CardView_android_minWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum height
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10008,8 +10104,9 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#cardBackgroundColor}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Background color for CardView.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10019,8 +10116,9 @@ public final class R {
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#cardCornerRadius}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Corner radius for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10032,8 +10130,9 @@ public final class R {
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#cardElevation}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Elevation for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10045,8 +10144,9 @@ public final class R {
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#cardMaxElevation}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Maximum Elevation for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10058,8 +10158,9 @@ public final class R {
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#cardPreventCornerOverlap}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10068,8 +10169,9 @@ public final class R {
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#cardUseCompatPadding}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -10078,8 +10180,9 @@ public final class R {
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#contentPadding}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the edges of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10091,8 +10194,9 @@ public final class R {
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#contentPaddingBottom}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the bottom edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10104,8 +10208,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#contentPaddingLeft}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the left edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10117,8 +10222,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#contentPaddingRight}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the right edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10130,8 +10236,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#contentPaddingTop}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the top edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10169,7 +10276,7 @@ public final class R {
      * <tr><td><code>{@link #Chip_chipStartPadding com.example.plantidentifier:chipStartPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeColor com.example.plantidentifier:chipStrokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeWidth com.example.plantidentifier:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.example.plantidentifier:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.example.plantidentifier:closeIcon}</code></td><td>Close button icon</td></tr>
      * <tr><td><code>{@link #Chip_closeIconEnabled com.example.plantidentifier:closeIconEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconEndPadding com.example.plantidentifier:closeIconEndPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconSize com.example.plantidentifier:closeIconSize}</code></td><td></td></tr>
@@ -10471,8 +10578,9 @@ public final class R {
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#closeIcon}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Close button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13950,10 +14058,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.example.plantidentifier:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.example.plantidentifier:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.example.plantidentifier:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.example.plantidentifier:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_borderWidth com.example.plantidentifier:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.example.plantidentifier:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.example.plantidentifier:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.example.plantidentifier:fabCustomSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabSize com.example.plantidentifier:fabSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.example.plantidentifier:hideMotionSpec}</code></td><td></td></tr>
@@ -13985,8 +14093,9 @@ public final class R {
       0x7f030209
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13996,8 +14105,9 @@ public final class R {
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -14005,12 +14115,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.plantidentifier:backgroundTintMode
@@ -14030,8 +14145,9 @@ public final class R {
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#elevation}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -15200,15 +15316,15 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.example.plantidentifier:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.example.plantidentifier:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.example.plantidentifier:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.example.plantidentifier:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * <tr><td><code>{@link #MaterialButton_cornerRadius com.example.plantidentifier:cornerRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_icon com.example.plantidentifier:icon}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconGravity com.example.plantidentifier:iconGravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconPadding com.example.plantidentifier:iconPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconSize com.example.plantidentifier:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.example.plantidentifier:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.example.plantidentifier:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.example.plantidentifier:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.example.plantidentifier:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
      * <tr><td><code>{@link #MaterialButton_rippleColor com.example.plantidentifier:rippleColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeColor com.example.plantidentifier:strokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeWidth com.example.plantidentifier:strokeWidth}</code></td><td></td></tr>
@@ -15305,8 +15421,9 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15316,8 +15433,9 @@ public final class R {
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -15325,12 +15443,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.plantidentifier:backgroundTintMode
@@ -15405,8 +15528,9 @@ public final class R {
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#iconTint}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15416,8 +15540,9 @@ public final class R {
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#iconTintMode}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the icon tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -15425,12 +15550,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.example.plantidentifier:iconTintMode
@@ -15523,12 +15653,12 @@ public final class R {
      * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.example.plantidentifier:chipGroupStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.example.plantidentifier:chipStandaloneStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.example.plantidentifier:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.example.plantidentifier:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.example.plantidentifier:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.example.plantidentifier:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.example.plantidentifier:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.example.plantidentifier:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.example.plantidentifier:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.example.plantidentifier:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.example.plantidentifier:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.example.plantidentifier:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.example.plantidentifier:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.example.plantidentifier:editTextStyle}</code></td><td>Default EditText style.</td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.example.plantidentifier:floatingActionButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.example.plantidentifier:materialButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.example.plantidentifier:materialCardViewStyle}</code></td><td></td></tr>
@@ -15655,8 +15785,10 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#colorAccent}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Bright complement to the primary branding color. By default, this is the color applied
+     * to framework controls (via colorControlActivated).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15666,8 +15798,9 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#colorBackgroundFloating}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15677,8 +15810,10 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#colorPrimary}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * The primary branding color for the app. By default, this is the color applied to the
+     * action bar background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15688,8 +15823,10 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#colorPrimaryDark}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Dark variant of the primary branding color. By default, this is the color applied to
+     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -15710,8 +15847,9 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#editTextStyle}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Default EditText style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16672,7 +16810,7 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.example.plantidentifier:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.example.plantidentifier:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #NavigationView_headerLayout com.example.plantidentifier:headerLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemBackground com.example.plantidentifier:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.example.plantidentifier:itemHorizontalPadding}</code></td><td></td></tr>
@@ -16739,8 +16877,9 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#elevation}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16986,7 +17125,7 @@ public final class R {
      * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.example.plantidentifier:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.example.plantidentifier:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.example.plantidentifier:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.example.plantidentifier:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.example.plantidentifier:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
      * <tr><td><code>{@link #RecyclerView_reverseLayout com.example.plantidentifier:reverseLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_spanCount com.example.plantidentifier:spanCount}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_stackFromEnd com.example.plantidentifier:stackFromEnd}</code></td><td></td></tr>
@@ -17102,8 +17241,17 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#layoutManager}
-     * attribute's value can be found in the {@link #RecyclerView} array.
+     * <p>
+     * @attr description
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -17573,7 +17721,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.example.plantidentifier:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.example.plantidentifier:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.example.plantidentifier:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
@@ -17597,8 +17745,9 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.plantidentifier.R.attr#elevation}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".

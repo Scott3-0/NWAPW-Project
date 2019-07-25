@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1446dd51a52a89a8c7901f1febfd4b4b/res/values-land/values-land.xml",
+                    "source": "/Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1471933d34e45cd98a911e4f18526cff/res/values-land/values-land.xml",
+                    "source": "/Users/mariakochi/.gradle/caches/transforms-2/files-2.1/d6b86737e1ddcc6f5f41b7b5ff3a0822/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
