@@ -1,16 +1,35 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/res/values-land/values-land.xml",
+                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1446dd51a52a89a8c7901f1febfd4b4b/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
                         "startOffsets": "55,125,196",
                         "endColumns": "69,70,67",
                         "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1471933d34e45cd98a911e4f18526cff/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
                     }
                 }
             ]

@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/res/values-v23/values-v23.xml",
+                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/052055aa32634b585f8461bd3b13b454/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "2646",
+                        "endLines": "39",
+                        "endColumns": "12",
+                        "endOffsets": "2791"
+                    }
+                },
+                {
+                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1446dd51a52a89a8c7901f1febfd4b4b/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
