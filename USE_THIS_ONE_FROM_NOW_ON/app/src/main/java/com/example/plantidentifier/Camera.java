@@ -84,6 +84,9 @@ public class Camera extends AppCompatActivity {
             chosenImageBitmap = ProcessImage.getBitmapFromView(imageView, imageView.getWidth(), imageView.getHeight());
 
             imageView.setImageBitmap(chosenImageBitmap);
+
+            ImageView second = findViewById(R.id.imageView);
+            imageView.setImageBitmap(chosenImageBitmap);
         }
     }
 
