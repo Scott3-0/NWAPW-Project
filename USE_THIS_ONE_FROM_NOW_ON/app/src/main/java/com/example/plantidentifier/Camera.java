@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -83,6 +85,7 @@ public class Camera extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.image_view);
         if (resultCode == RESULT_OK && requestCode == 2){
             Uri imageUri = data.getData();
+            getUriPath(getApplicationContext(), imageUri);
             ContentResolver contentResolver = getContentResolver();
             try {
                 InputStream inputStream = contentResolver.openInputStream(imageUri);
@@ -92,6 +95,26 @@ public class Camera extends AppCompatActivity {
                 Log.e(TAG, e.getMessage(), e);
             }
         }
+    }
+
+    protected String getUriPath(Context context, Uri uri) {
+        String path = "";
+        if(context != null && uri != null) {
+            if(isFileUri(uri)){
+                path = uri.getPath();
+            }
+        }
+        return path;
+    }
+
+    protected boolean isFileUri(Uri uri) {
+        boolean isFile = false;
+        if(uri != null) {
+            String uriScheme = uri.getScheme();
+            if(uriScheme.equals("file"))
+                isFile = true;
+        }
+        return isFile;
     }
 
 }
