@@ -44,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        Button testWeb = (Button) findViewById(R.id.tempButton2);
+        testWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AccessPlantInfoOnWebpage.class);
+                startActivity(intent);
+            }
+
+        });
     }
 
 }
