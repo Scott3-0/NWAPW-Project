@@ -27,6 +27,7 @@
 # *.so
 
 # generated files
+bin/
 gen/
 
 # Ignore gradle files
