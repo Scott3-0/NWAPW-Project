@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private String plant_type="daisy";
 
-    protected void setPlant_Type(String newPlant_type) {
-        plant_type=newPlant_type;
+    protected void setPlantType(String newPlantType) {
+        plant_type=newPlantType;
     }
 
     @Override
