@@ -1122,7 +1122,6 @@ id line3
 id listMode
 id list_item
 id masked
-id menuButton
 id message
 id middle
 id mini
@@ -1198,7 +1197,6 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id tempButton2
 id temporaryButton
 id text
 id text2
@@ -1232,7 +1230,6 @@ id up
 id useLogo
 id view_offset_helper
 id visible
-id webview
 id withText
 id wrap
 id wrap_content
@@ -1283,7 +1280,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_access_plant_info_on_webpage
 layout activity_camera
 layout activity_display_plant_types
 layout activity_main

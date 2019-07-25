@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     private String plant_type="daisy";
 
-    protected void setPlant_Type(String newPlant_type) {
-        plant_type=newPlant_type;
+    protected void setPlantType(String newPlantType) {
+        plant_type=newPlantType;
     }
 
     @Override
@@ -44,15 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        Button testWeb = (Button) findViewById(R.id.tempButton2);
-        testWeb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AccessPlantInfoOnWebpage.class);
-                startActivity(intent);
-            }
-
-        });
     }
 
 }
