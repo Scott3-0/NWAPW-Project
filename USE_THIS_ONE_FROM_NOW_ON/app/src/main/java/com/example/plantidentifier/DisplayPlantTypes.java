@@ -16,7 +16,7 @@ public class DisplayPlantTypes extends AppCompatActivity {
 
         /**Do note that there is a cleaner way to do this, but I don't quite understand
          * how it works so I'm leaving the buttons like this for now*/
-        //Does this work???
+        //button goes to camera screen
         Button goToCamera = (Button) findViewById(R.id.toCamera);
         goToCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,7 +26,8 @@ public class DisplayPlantTypes extends AppCompatActivity {
             }
 
         });
-        //Does this work too?? And menu = mainActivity.java
+
+        //button goes to main screen
         Button goToMenu = (Button) findViewById(R.id.toMenu);
         goToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +37,7 @@ public class DisplayPlantTypes extends AppCompatActivity {
             }
 
         });
+
     }
 
     private void defineButtons() {

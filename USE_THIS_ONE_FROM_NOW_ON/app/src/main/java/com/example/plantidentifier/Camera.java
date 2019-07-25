@@ -25,7 +25,7 @@ public class Camera extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_camera);
 
         //VIEWS
         imageView = findViewById(R.id.image_view);
@@ -49,6 +49,18 @@ public class Camera extends AppCompatActivity {
                     pickImageFromGallery();
                 }
             }
+        });
+        setContentView(R.layout.activity_camera);
+
+        //button sends user to menu
+        Button goToMenu = (Button) findViewById(R.id.menuButton);
+        goToMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Camera.this, MainActivity.class);
+                startActivity(intent);
+            }
+
         });
     }
 

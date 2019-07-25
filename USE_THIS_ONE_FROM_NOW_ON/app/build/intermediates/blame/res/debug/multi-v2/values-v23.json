@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\esdem\\Documents\\GitHub\\NWAPW-Project\\USE_THIS_ONE_FROM_NOW_ON\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\debfd5214416f05d096c96770f02e8d4\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "2646",
+                        "endLines": "39",
+                        "endColumns": "12",
+                        "endOffsets": "2791"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\26fd7e52a58fb50c67b983154d6c68e9\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
