@@ -16,8 +16,7 @@ import android.widget.Toast;
 
 public class Camera extends AppCompatActivity {
 
-    private static final int IMAGE_PICK_CODE = 1000;
-    private static final int PERMISSION_CODE = 1001;
+    private static final int PERMISSION_CODE = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +50,7 @@ public class Camera extends AppCompatActivity {
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-        startActivityForResult(intent, IMAGE_PICK_CODE);
+        startActivityForResult(intent, 2);
     }
 
     @Override
@@ -69,7 +68,7 @@ public class Camera extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         ImageView imageView = findViewById(R.id.image_view);
-        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
+        if (resultCode == RESULT_OK && requestCode == 2){
             imageView.setImageURI(data.getData());
         }
     }
