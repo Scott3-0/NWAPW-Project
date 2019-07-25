@@ -81,35 +81,12 @@ public class Camera extends AppCompatActivity {
             //this could mean altering a copy or altering R.id.image_view
             imageView.setImageURI(data.getData());
             //okay we may want to change the bitmap.config argument, otherwise maybe this works?
-            chosenImageBitmap = Bitmap.createBitmap(imageView.getWidth(), imageView.getHeight(), Bitmap.Config.ARGB_8888);
+            chosenImageBitmap = ProcessImage.getBitmapFromView(imageView, imageView.getWidth(), imageView.getHeight());
+
+            imageView.setImageBitmap(chosenImageBitmap);
         }
     }
 
-    //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
-    public static Bitmap getBitmapFromView(View view, int width, int height) {
-        if (width > 0 && height > 0) {
-            view.measure(View.MeasureSpec.makeMeasureSpec(convertDpToPixels(width),
-                    View.MeasureSpec.EXACTLY),
-                    View.MeasureSpec.makeMeasureSpec(convertDpToPixels(height),
-                            View.MeasureSpec.EXACTLY));
-        }
-        view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
 
-        Bitmap bitmap = Bitmap.createBitmap(view.getMeasuredWidth(),
-                view.getMeasuredHeight(), Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(bitmap);
-        Drawable background = view.getBackground();
-
-        if (background != null) {
-            background.draw(canvas);
-        }
-        view.draw(canvas);
-
-        return bitmap;
-    }//Same as above source
-    public static int convertDpToPixels(float dp) {
-        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-                dp, Resources.getSystem().getDisplayMetrics()));
-    }
 
 }
