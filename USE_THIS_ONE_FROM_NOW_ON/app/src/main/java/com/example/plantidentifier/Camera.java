@@ -6,11 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -50,7 +54,7 @@ public class Camera extends AppCompatActivity {
 
 
     }
-
+    Bitmap chosenImageBitmap;
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
@@ -77,10 +81,35 @@ public class Camera extends AppCompatActivity {
             //this could mean altering a copy or altering R.id.image_view
             imageView.setImageURI(data.getData());
             //okay we may want to change the bitmap.config argument, otherwise maybe this works?
-            Bitmap chosenImageBitmap = Bitmap.createBitmap(imageView.getWidth(), imageView.getHeight(), Bitmap.Config.ARGB_8888);
+            chosenImageBitmap = Bitmap.createBitmap(imageView.getWidth(), imageView.getHeight(), Bitmap.Config.ARGB_8888);
         }
     }
 
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
+    public static Bitmap getBitmapFromView(View view, int width, int height) {
+        if (width > 0 && height > 0) {
+            view.measure(View.MeasureSpec.makeMeasureSpec(convertDpToPixels(width),
+                    View.MeasureSpec.EXACTLY),
+                    View.MeasureSpec.makeMeasureSpec(convertDpToPixels(height),
+                            View.MeasureSpec.EXACTLY));
+        }
+        view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
+
+        Bitmap bitmap = Bitmap.createBitmap(view.getMeasuredWidth(),
+                view.getMeasuredHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        Drawable background = view.getBackground();
+
+        if (background != null) {
+            background.draw(canvas);
+        }
+        view.draw(canvas);
+
+        return bitmap;
+    }//Same as above source
+    public static int convertDpToPixels(float dp) {
+        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+                dp, Resources.getSystem().getDisplayMetrics()));
+    }
 
 }
