@@ -1,0 +1,180 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d4507d6206469a54f8fb01057fb071d6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\2896042ee71f8caf52bd0097dac94934\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b4ad4273d0dabc5b364902355905180f\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d6e46514a314fa11c28d3ac2e4b42eee\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\73cf9a02e787dfc68d34fc13f1d5fd86\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\abd410c1bf5b6aaaee405a862f57df41\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\123d99b2aa4e1fa829d5d852a4511d0d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\aee38c71a8d751880499626d423b2731\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\8eadcf479fe8096892080d13234f9155\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b6093626727530a2a77febf0ee12c7e1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\31981f268a2c6e89c72a79f3e3a173b9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\74ed9f61c6437364e082d56238dd1de2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\6994a34bd8bbd2d5567eef7f11456e32\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c18d2b790ec3400b55cd940ba7d4dacb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\9c633d9be6e1ee08b652c90598aa896a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b34d57687eae3549a250acb4202b6e9f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\ff0d53370a69737f999a973a7cf1a04e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\4a22230bba0c5e5dc2504a1123f04b44\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\e947dec62969f93a5825435dea20700d\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\32da4fa12df7eefb0ed541501d8c5335\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c8a2b03ad6dd619dc2c37e8d7456d3af\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\2b75ea93a70d235680a4b1ff818dd493\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\7321871e1ffff0e493658c78a58c5040\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\7e0a9cee8f3d8868b45b61c02421c816\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\a11d634fc339758b35939140664106b8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\4046526219d52a63adc4bee0e0ed4987\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\44bad7c60f2d3e77c991ca237e9c40f0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\9b7105b85684e48d2c45db3834e0f2b6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c254e5def9c57fa2f3fadbe049e9a111\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\829c169c2799e9166c0ea2a101f2a5dd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\589e9d2de00ca71092e398bf85179972\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:5:22-77
+application
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:7:5-23:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d4507d6206469a54f8fb01057fb071d6\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d4507d6206469a54f8fb01057fb071d6\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b4ad4273d0dabc5b364902355905180f\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b4ad4273d0dabc5b364902355905180f\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\e947dec62969f93a5825435dea20700d\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\e947dec62969f93a5825435dea20700d\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\32da4fa12df7eefb0ed541501d8c5335\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\32da4fa12df7eefb0ed541501d8c5335\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\e947dec62969f93a5825435dea20700d\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.example.plantidentifier.DisplayPlantTypes
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:14:9-64
+	android:name
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:14:19-52
+activity#com.example.plantidentifier.Camera
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:15:19-41
+activity#com.example.plantidentifier.MainActivity
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:16:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d4507d6206469a54f8fb01057fb071d6\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d4507d6206469a54f8fb01057fb071d6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\2896042ee71f8caf52bd0097dac94934\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\2896042ee71f8caf52bd0097dac94934\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b4ad4273d0dabc5b364902355905180f\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b4ad4273d0dabc5b364902355905180f\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d6e46514a314fa11c28d3ac2e4b42eee\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\d6e46514a314fa11c28d3ac2e4b42eee\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\73cf9a02e787dfc68d34fc13f1d5fd86\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\73cf9a02e787dfc68d34fc13f1d5fd86\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\abd410c1bf5b6aaaee405a862f57df41\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\abd410c1bf5b6aaaee405a862f57df41\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\123d99b2aa4e1fa829d5d852a4511d0d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\123d99b2aa4e1fa829d5d852a4511d0d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\aee38c71a8d751880499626d423b2731\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\aee38c71a8d751880499626d423b2731\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\8eadcf479fe8096892080d13234f9155\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\8eadcf479fe8096892080d13234f9155\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b6093626727530a2a77febf0ee12c7e1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b6093626727530a2a77febf0ee12c7e1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\31981f268a2c6e89c72a79f3e3a173b9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\31981f268a2c6e89c72a79f3e3a173b9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\74ed9f61c6437364e082d56238dd1de2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\74ed9f61c6437364e082d56238dd1de2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\6994a34bd8bbd2d5567eef7f11456e32\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\6994a34bd8bbd2d5567eef7f11456e32\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c18d2b790ec3400b55cd940ba7d4dacb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c18d2b790ec3400b55cd940ba7d4dacb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\9c633d9be6e1ee08b652c90598aa896a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\9c633d9be6e1ee08b652c90598aa896a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b34d57687eae3549a250acb4202b6e9f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\b34d57687eae3549a250acb4202b6e9f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\ff0d53370a69737f999a973a7cf1a04e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\ff0d53370a69737f999a973a7cf1a04e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\4a22230bba0c5e5dc2504a1123f04b44\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\4a22230bba0c5e5dc2504a1123f04b44\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\e947dec62969f93a5825435dea20700d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\e947dec62969f93a5825435dea20700d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\32da4fa12df7eefb0ed541501d8c5335\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\32da4fa12df7eefb0ed541501d8c5335\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c8a2b03ad6dd619dc2c37e8d7456d3af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c8a2b03ad6dd619dc2c37e8d7456d3af\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\2b75ea93a70d235680a4b1ff818dd493\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\2b75ea93a70d235680a4b1ff818dd493\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\7321871e1ffff0e493658c78a58c5040\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\7321871e1ffff0e493658c78a58c5040\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\7e0a9cee8f3d8868b45b61c02421c816\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\7e0a9cee8f3d8868b45b61c02421c816\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\a11d634fc339758b35939140664106b8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\a11d634fc339758b35939140664106b8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\4046526219d52a63adc4bee0e0ed4987\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\4046526219d52a63adc4bee0e0ed4987\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\44bad7c60f2d3e77c991ca237e9c40f0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\44bad7c60f2d3e77c991ca237e9c40f0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\9b7105b85684e48d2c45db3834e0f2b6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\9b7105b85684e48d2c45db3834e0f2b6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c254e5def9c57fa2f3fadbe049e9a111\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\c254e5def9c57fa2f3fadbe049e9a111\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\829c169c2799e9166c0ea2a101f2a5dd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\829c169c2799e9166c0ea2a101f2a5dd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\589e9d2de00ca71092e398bf85179972\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\bremm\.gradle\caches\transforms-2\files-2.1\589e9d2de00ca71092e398bf85179972\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\bremm\Documents\GitHub\NWAPW-Project\USE_THIS_ONE_FROM_NOW_ON\app\src\main\AndroidManifest.xml
