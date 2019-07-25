@@ -1170,6 +1170,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectButton
 id select_dialog_listview
 id selected
 id shortcut
@@ -1372,6 +1373,7 @@ string plant_is
 string plant_type
 string search_menu_title
 string search_plants
+string select
 string status_bar_notification_info_overflow
 string temporary
 string text_filler
