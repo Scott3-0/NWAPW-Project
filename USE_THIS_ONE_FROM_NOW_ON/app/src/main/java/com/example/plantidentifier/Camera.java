@@ -82,11 +82,9 @@ public class Camera extends AppCompatActivity {
             imageView.setImageURI(data.getData());
             //okay we may want to change the bitmap.config argument, otherwise maybe this works?
             chosenImageBitmap = ProcessImage.getBitmapFromView(imageView, imageView.getWidth(), imageView.getHeight());
-
+            chosenImageBitmap = ProcessImage.resizeBitmap(chosenImageBitmap);
             imageView.setImageBitmap(chosenImageBitmap);
 
-            ImageView second = findViewById(R.id.imageView);
-            imageView.setImageBitmap(chosenImageBitmap);
         }
     }
 
