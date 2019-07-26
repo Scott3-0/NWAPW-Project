@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1446dd51a52a89a8c7901f1febfd4b4b/res/values-v16/values-v16.xml",
+=======
+            "outputFile": "C:\\Users\\esdem\\Documents\\GitHub\\NWAPW-Project\\USE_THIS_ONE_FROM_NOW_ON\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\26fd7e52a58fb50c67b983154d6c68e9\\res\\values-v16\\values-v16.xml",
+>>>>>>> Elaine's-Branch
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +30,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/9ce28fd2c015b859b1a6e19749e3f9ea/res/values-v16/values-v16.xml",
+=======
+                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\53705a3211b6755f5812e29cf283e113\\res\\values-v16\\values-v16.xml",
+>>>>>>> Elaine's-Branch
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

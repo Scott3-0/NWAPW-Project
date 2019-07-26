@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.versionedparcelable:versionedparcelable:1.0.0@aar">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0395485f43fe0155044c018bc9d06018/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0395485f43fe0155044c018bc9d06018/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/576067a6d3c1b1046e49ff921d69949d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/576067a6d3c1b1046e49ff921d69949d/jars/classes.jar!/" />
+>>>>>>> Elaine's-Branch
     </CLASSES>
     <JAVADOC />
     <SOURCES>

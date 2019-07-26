@@ -1109,6 +1109,10 @@ id icon_group
 id ifRoom
 id image
 id imageButton
+<<<<<<< HEAD
+=======
+id imageView
+>>>>>>> Elaine's-Branch
 id image_view
 id info
 id invisible

@@ -8,8 +8,15 @@ import android.content.res.AssetFileDescriptor;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -115,6 +122,7 @@ public class Camera extends AppCompatActivity {
         return fileChannel.map(fileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
     }
 
+    Bitmap chosenImageBitmap;
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
@@ -138,7 +146,14 @@ public class Camera extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         ImageView imageView = findViewById(R.id.image_view);
         if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
+            //imageView has the image in it. What we need to do is alter the image somehow.
+            //this could mean altering a copy or altering R.id.image_view
             imageView.setImageURI(data.getData());
+            //okay we may want to change the bitmap.config argument, otherwise maybe this works?
+            chosenImageBitmap = ProcessImage.getBitmapFromView(imageView, imageView.getWidth(), imageView.getHeight());
+            chosenImageBitmap = ProcessImage.resizeBitmap(chosenImageBitmap);
+            imageView.setImageBitmap(chosenImageBitmap);
+
         }
     }
 
