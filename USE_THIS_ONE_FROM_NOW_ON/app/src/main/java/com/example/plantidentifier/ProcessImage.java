@@ -4,7 +4,9 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
@@ -57,5 +59,30 @@ public class ProcessImage {
         //!What is 70???
         bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
         return stream.toByteArray();
+    }
+
+    public static Bitmap grayscaleBitmapArray(Bitmap bitmap) {
+        int imgWidth = bitmap.getWidth();
+        int imgHeight = bitmap.getHeight();
+        int output[][]= new int[imgWidth][imgHeight];
+        Bitmap outputBitmap = bitmap;
+
+        for(int x = 0; x < imgWidth; x ++) {
+            for(int y = 0; y < imgHeight; y ++) {
+                //getPixel outputs hexadecimal ints
+                int pixel = bitmap.getPixel(x, y);
+                int red = Color.red(pixel);
+                int green = Color.green(pixel);
+                int blue = Color.blue(pixel);
+                Log.i("Colors", "("+red+", "+green+", "+blue+")");
+
+                output[x][y] = (red+green+blue)/3;
+
+                outputBitmap.setPixel(x, y, output[x][y]);
+            }
+        }
+
+        //return output;
+        return outputBitmap;
     }
 }
