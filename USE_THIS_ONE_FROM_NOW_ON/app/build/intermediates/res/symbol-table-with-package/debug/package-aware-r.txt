@@ -1109,6 +1109,7 @@ id icon_group
 id ifRoom
 id image
 id imageButton
+id imageView
 id image_view
 id info
 id invisible

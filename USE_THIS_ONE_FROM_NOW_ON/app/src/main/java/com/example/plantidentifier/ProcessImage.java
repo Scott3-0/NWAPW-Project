@@ -8,6 +8,8 @@ import android.graphics.drawable.Drawable;
 import android.util.TypedValue;
 import android.view.View;
 
+import java.io.ByteArrayOutputStream;
+
 public class ProcessImage {
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
     public static Bitmap getBitmapFromView(View view, int width, int height) {
@@ -38,7 +40,22 @@ public class ProcessImage {
                 dp, Resources.getSystem().getDisplayMetrics()));
     }
 
-    /*public static Bitmap resizeBitmap(Bitmap bitmap) {
-        Bitmap resized = BitmapFactory.
-    }*/
+    //https://stackoverflow.com/questions/4837715/how-to-resize-a-bitmap-in-android
+    public static Bitmap resizeBitmap(Bitmap bitmap) {
+        byte[] imageAsBytes = getBytesFromBitmap(bitmap);
+        //b is a _____ of the inputted bitmap.
+        Bitmap b = BitmapFactory.decodeByteArray(imageAsBytes, 0, imageAsBytes.length);
+        //create a scaled version of b
+        Bitmap resizedImage = Bitmap.createScaledBitmap(b, 32, 32, false);
+
+        return resizedImage;
+    }
+
+    //https://stackoverflow.com/questions/10513976/how-to-convert-image-into-byte-array-and-byte-array-to-base64-string-in-android
+    public static byte[] getBytesFromBitmap(Bitmap bitmap) {
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        //!What is 70???
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
+        return stream.toByteArray();
+    }
 }
