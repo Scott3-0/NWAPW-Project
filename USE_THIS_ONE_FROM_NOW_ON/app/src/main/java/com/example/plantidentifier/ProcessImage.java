@@ -1,9 +1,6 @@
 package com.example.plantidentifier;
 
-<<<<<<< HEAD
-public class ProcessImage {
 
-=======
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -62,5 +59,4 @@ public class ProcessImage {
         bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
         return stream.toByteArray();
     }
->>>>>>> Elaine's-Branch
 }

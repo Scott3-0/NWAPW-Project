@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\esdem\\Documents\\GitHub\\NWAPW-Project\\USE_THIS_ONE_FROM_NOW_ON\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "/Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\26fd7e52a58fb50c67b983154d6c68e9\\res\\values-land\\values-land.xml",
+                    "source": "/Users/mariakochi/.gradle/caches/transforms-2/files-2.1/79b412ddf559b5b9aef2b7d6c1ca4e86/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,11 +14,7 @@
                     }
                 },
                 {
-<<<<<<< HEAD
                     "source": "/Users/mariakochi/.gradle/caches/transforms-2/files-2.1/d6b86737e1ddcc6f5f41b7b5ff3a0822/res/values-land/values-land.xml",
-=======
-                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\db50398d5bbb6d78784c429bc1cd0a55\\res\\values-land\\values-land.xml",
->>>>>>> Elaine's-Branch
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
