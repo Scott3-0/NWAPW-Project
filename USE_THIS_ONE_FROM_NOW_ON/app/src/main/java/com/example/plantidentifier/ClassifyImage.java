@@ -16,22 +16,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
-import android.view.View;
+import android.graphics.Bitmap;
 
 
-import android.Manifest;
 import android.app.Activity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
-import android.os.Build;
-import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 import android.widget.TextView;
 
 import static android.content.ContentValues.TAG;
@@ -104,7 +96,7 @@ public class ClassifyImage {
             Log.e(TAG, "Image classifier has not been initialized; Skipped.");
             return "Uninitialized Classifier.";
         }
-        convertBitmapToByteBuffer(ProcessImage.getBitmapFromView());
+        convertBitmapToByteBuffer(bitmap);
 
         //send processed bitmap to nn
         long startTime = SystemClock.uptimeMillis();
@@ -167,16 +159,14 @@ public class ClassifyImage {
     }
 
     //"memory-map the model file in assets"
-    private MappedByteBuffer loadModelFile() throws IOException {
-        //open tflite model and memory map it so it loads
-        AssetFileDescriptor fileDescriptor = this.getAssets().openFd("andriodModel.tflite");
+    private MappedByteBuffer loadModelFile(Activity activity) throws IOException {
+        AssetFileDescriptor fileDescriptor = activity.getAssets().openFd("andriodModel.tflite");
         FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
         FileChannel fileChannel = inputStream.getChannel();
         long startOffset = fileDescriptor.getStartOffset();
         long declaredLength = fileDescriptor.getDeclaredLength();
-        return fileChannel.map(fileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
     }
-
     //converts bitmap to byte buffer
     private void convertBitmapToByteBuffer(Bitmap bitmap) {
         if (imgData == null) {
