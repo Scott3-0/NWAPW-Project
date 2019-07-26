@@ -1,0 +1,15 @@
+IN A NEW CONDA VIRTUAL ENVIRONMENT INSTALL THE FOLLOWING ITEMS
+START BY INSTALLING PIP
+
+	pip install:
+Tensorflow
+Pillow
+future
+wxPython
+matplotlib
+opencv
+imutils
+keras
+
+	conda install:
+theano

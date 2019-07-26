@@ -1,7 +1,6 @@
 package com.example.plantidentifier;
 
 import androidx.appcompat.app.AppCompatActivity;
-import org.tensorflow.lite.Interpreter;
 
 import android.content.Intent;
 import android.os.Bundle;
