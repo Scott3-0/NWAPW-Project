@@ -92,10 +92,15 @@ public class Camera extends AppCompatActivity {
         return bitmap;
     }
 
+<<<<<<< Updated upstream
     protected String getUriPath(Context context, Uri uri) {
         String path = "";
         if(context != null && uri != null && isFileUri(uri)){
                 path = uri.getPath();
+=======
+            ImageView second = findViewById(R.id.imageView);
+            second.setImageBitmap(chosenImageBitmap);
+>>>>>>> Stashed changes
         }
         return path;
     }
