@@ -31,6 +31,8 @@ import java.nio.channels.FileChannel;
 
 import static android.app.Activity.RESULT_OK;
 
+import static android.app.Activity.RESULT_OK;
+
 
 public class Camera extends AppCompatActivity {
 
