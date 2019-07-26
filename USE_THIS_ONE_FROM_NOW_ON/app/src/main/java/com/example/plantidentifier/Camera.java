@@ -20,8 +20,6 @@ import android.widget.Toast;
 
 public class Camera extends AppCompatActivity {
 
-    private static final String TAG = "ChoosePictureActivity";
-
     private static final int PERMISSION_CODE = 0;
 
     @Override
@@ -84,23 +82,20 @@ public class Camera extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.image_view);
         if (resultCode == RESULT_OK && requestCode == 2) {
             Uri imageUri = data.getData();
-            imageView.setImageURI(imageUri);
-            imageView.setImageBitmap(createBitmap(imageUri));
+            //imageView.setImageURI(imageUri);
+            imageView.setImageBitmap(getBitmap(imageUri));
         }
-
     }
 
-    protected Bitmap createBitmap(Uri imageUri) {
+    protected Bitmap getBitmap(Uri imageUri) {
         Bitmap bitmap = BitmapFactory.decodeFile(getUriPath(getApplicationContext(), imageUri));
         return bitmap;
     }
 
     protected String getUriPath(Context context, Uri uri) {
         String path = "";
-        if(context != null && uri != null) {
-            if(isFileUri(uri)){
+        if(context != null && uri != null && isFileUri(uri)){
                 path = uri.getPath();
-            }
         }
         return path;
     }
