@@ -61,7 +61,7 @@ public class ProcessImage {
         return stream.toByteArray();
     }
 
-    public static Bitmap grayscaleBitmapArray(Bitmap bitmap) {
+    public static int[][] grayscaleBitmapArray(Bitmap bitmap) {
         int imgWidth = bitmap.getWidth();
         int imgHeight = bitmap.getHeight();
         int output[][]= new int[imgWidth][imgHeight];
@@ -75,7 +75,7 @@ public class ProcessImage {
                 int green = Color.green(pixel);
                 int blue = Color.blue(pixel);
                 int alpha = Color.alpha(pixel);
-                Log.i("Colors", "("+red+", "+green+", "+blue+")");
+                //Log.i("Colors", "("+red+", "+green+", "+blue+")");
 
                 output[x][y] = (red+green+blue)/3;
 
@@ -83,7 +83,7 @@ public class ProcessImage {
             }
         }
 
-        //return output;
-        return outputBitmap;
+        return output;
+        //return outputBitmap;
     }
 }
