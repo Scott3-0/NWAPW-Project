@@ -29,6 +29,8 @@ import java.io.IOException;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
+import static android.app.Activity.RESULT_OK;
+
 
 public class Camera extends AppCompatActivity {
 
