@@ -74,11 +74,12 @@ public class ProcessImage {
                 int red = Color.red(pixel);
                 int green = Color.green(pixel);
                 int blue = Color.blue(pixel);
+                int alpha = Color.alpha(pixel);
                 Log.i("Colors", "("+red+", "+green+", "+blue+")");
 
                 output[x][y] = (red+green+blue)/3;
 
-                outputBitmap.setPixel(x, y, output[x][y]);
+                outputBitmap.setPixel(x, y, Color.argb(alpha, output[x][y], output[x][y], output[x][y]));
             }
         }
 
