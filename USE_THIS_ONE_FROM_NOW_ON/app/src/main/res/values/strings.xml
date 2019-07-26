@@ -10,5 +10,8 @@
     <string name="plant_type">daisy</string>
     <string name="temporary">results</string>
     <string name="choose_image">Choose Image</string>
+<<<<<<< HEAD
     <string name="select">select</string>
+=======
+>>>>>>> Elaine's-Branch
 </resources>
