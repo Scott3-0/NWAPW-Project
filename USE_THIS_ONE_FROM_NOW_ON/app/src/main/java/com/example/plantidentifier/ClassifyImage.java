@@ -54,7 +54,9 @@ public class ClassifyImage {
     //array holds results from inference
     private float[][] labelProbArray = null;
 
-    /** multi-stage low pass filter **/
+    /**
+     * multi-stage low pass filter
+     **/
     private float[][] filterLabelProbArray = null;
     private static final int FILTER_STAGES = 3;
     private static final float FILTER_FACTOR = 0.4f;
@@ -66,92 +68,44 @@ public class ClassifyImage {
     private
     final int resultsToShow = 3;
 
-    private PriorityQueue<Map.Entry<String, Float>> sortedLabels =
-            new PriorityQueue<>(
-                    resultsToShow,
-                    new Comparator<Map.Entry<String, Float>>() {
-                        @Override
-                        public int compare(Map.Entry<String, Float> o1, Map.Entry<String, Float> o2) {
-                            return (o1.getValue()).compareTo(o2.getValue());
-                        }
-                    });
-
     //need output as TextView
     TextView outputString;
 
     //declare interpreter
-    Interpreter tflite;
+    private Interpreter tflite;
+    private MappedByteBuffer tfliteModel;
 
     //constructor
     ClassifyImage(Activity activity) throws IOException {
-        tflite = new Interpreter(loadModelFile(activity));
+        tfliteModel = loadModelFile(activity);
+        tflite = new Interpreter(tfliteModel);
         labelList = loadLabelList(activity);
         imgData =
                 ByteBuffer.allocateDirect(
                         4 * batchSize * imageSizeX * imageSizeY * pixelSize);
         imgData.order(ByteOrder.nativeOrder());
-        labelProbArray = new float[1][labelList.size()];
-        filterLabelProbArray = new float[FILTER_STAGES][labelList.size()];
-        Log.d(TAG, "Created a Tensorflow Lite Image Classifier.");
-
     }
 
-    //gets the bitmap and sends it to the nn
-    String classifyFrame(Bitmap bitmap) {
-        if (tflite == null) {
-            Log.e(TAG, "Image classifier has not been initialized; Skipped.");
-            return "Uninitialized Classifier.";
-        }
-        convertBitmapToByteBuffer(bitmap);
+    public static class Recognition {
+        private final String id;
+        private final String title;
+        private final Float confidence;
 
-        //send processed bitmap to nn
-        long startTime = SystemClock.uptimeMillis();
-        //replace with the image in bitmap form
-        tflite.run(imgData, labelProbArray);
-        long endTime = SystemClock.uptimeMillis();
-        Log.d(TAG, "Timecost to run model inference: " + Long.toString(endTime - startTime));
-
-        // smooth the results
-        applyFilter();
-
-        // print the results
-        String textToShow = printTopKLabels();
-        textToShow = Long.toString(endTime - startTime) + "ms" + textToShow;
-        return textToShow;
-    }
-
-    //not entirely certain what it does, but "Low pass filter `labelProbArray` into the first stage of the filter."
-    void applyFilter(){
-        int numberLabels =  labelList.size();
-
-        // Low pass filter `labelProbArray` into the first stage of the filter.
-        for(int j=0; j<numberLabels; ++j){
-            filterLabelProbArray[0][j] += FILTER_FACTOR*(labelProbArray[0][j] -
-                    filterLabelProbArray[0][j]);
-        }
-        // Low pass filter each stage into the next.
-        for (int i=1; i<FILTER_STAGES; ++i){
-            for(int j=0; j<numberLabels; ++j){
-                filterLabelProbArray[i][j] += FILTER_FACTOR*(
-                        filterLabelProbArray[i-1][j] -
-                                filterLabelProbArray[i][j]);
-
-            }
+        public Recognition(final String id, final String title, final Float confidence) {
+            this.id = id;
+            this.title = title;
+            this.confidence = confidence;
         }
 
-        // Copy the last stage filter output back to `labelProbArray`.
-        for(int j=0; j<numberLabels; ++j){
-            labelProbArray[0][j] = filterLabelProbArray[FILTER_STAGES-1][j];
+        public Float getConfidence() {
+            return confidence;
         }
     }
 
-    //close tflite to get the solutions
-    public void close() {
-        tflite.close();
-        tflite = null;
-    }
 
-    /** load label list (in assets) */
+    /**
+     * load label list (in assets)
+     */
     private List<String> loadLabelList(Activity activity) throws IOException {
         List<String> labelList = new ArrayList<String>();
         BufferedReader reader =
@@ -173,66 +127,56 @@ public class ClassifyImage {
         long declaredLength = fileDescriptor.getDeclaredLength();
         return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
     }
+
     //converts bitmap to byte buffer
     private void convertBitmapToByteBuffer(Bitmap bitmap) {
-
-        if (imgData == null) {
-            return;
-        }
         imgData.rewind();
         bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
         // Convert the image to floating point.
         int pixel = 0;
-        long startTime = SystemClock.uptimeMillis();
         for (int i = 0; i < imageSizeX; ++i) {
             for (int j = 0; j < imageSizeY; ++j) {
                 final int val = intValues[pixel++];
-                imgData.putFloat((((val >> 16) & 0xFF)-IMAGE_MEAN)/IMAGE_STD);
-                imgData.putFloat((((val >> 8) & 0xFF)-IMAGE_MEAN)/IMAGE_STD);
-                imgData.putFloat((((val) & 0xFF)-IMAGE_MEAN)/IMAGE_STD);
+                imgData.put((byte) ((val >> 16) & 0xFF));
+                imgData.put((byte) ((val >> 8) & 0xFF));
+                imgData.put((byte) (val & 0xFF));
             }
         }
-        long endTime = SystemClock.uptimeMillis();
-        Log.d(TAG, "Timecost to put values into ByteBuffer: " + Long.toString(endTime - startTime));
     }
 
-    // "Prints top-K labels, to be shown in UI as the results."
-    private String printTopKLabels() {
+    protected void runInference() {
+        tflite.run(imgData, labelProbArray);
+    }
+
+    protected List<Recognition> recognizeImage(Bitmap bitmap) {
+        convertBitmapToByteBuffer(bitmap);
+        runInference();
+        PriorityQueue<Recognition> pq =
+                new PriorityQueue<Recognition>(
+                        3,
+                        new Comparator<Recognition>() {
+                            @Override
+                            public int compare(Recognition lhs, Recognition rhs) {
+                                // Intentionally reversed to put high confidence at the head of the queue.
+                                return Float.compare(rhs.getConfidence(), lhs.getConfidence());
+                            }
+                        });
         for (int i = 0; i < labelList.size(); ++i) {
-            sortedLabels.add(
-                    new AbstractMap.SimpleEntry<>(labelList.get(i), labelProbArray[0][i]));
-            if (sortedLabels.size() > resultsToShow) {
-                sortedLabels.poll();
-            }
+            pq.add(
+                    new Recognition(
+                            "" + i,
+                            labelList.size() > i ? labelList.get(i) : "unknown",
+                            getNormalizedProbability(i),
+                            null));
         }
-        String textToShow = "";
-        final int size = sortedLabels.size();
-        for (int i = 0; i < size; ++i) {
-            Map.Entry<String, Float> label = sortedLabels.poll();
-            textToShow = String.format("\n%s: %4.2f",label.getKey(),label.getValue()) + textToShow;
+        ArrayList<Recognition> recognitions = new ArrayList<Recognition>();
+        for(int i = 0; i < pq.size(); ++i) {
+            recognitions.add(pq.poll());
         }
-        return textToShow;
+        return recognitions;
     }
 
-    /*
-    //makes input and output into arrays and runs the tflite model!!!
-    public float doInference(){
-        "input shape is [1]"
-        float[] inputVal = new float[1];
-        inputVal[0] = Float.valueOf(inputString);
-
-
-        //"output shape is [1][1]"
-        float[][] outputVal = new float[1][1];
-
-        //run the inference, giving it the input shape and the output is the output shape
-        tflite.run(ProcessImage.getBitmapFromView(Camera.getImageView(), 32, 32), outputVal);
-
-        //result
-        float inferredValue = outputVal[0][0];
-        return inferredValue;
+    protected float getNormalizedProbability(int labelIndex) {
+        return (labelProbArray[0][labelIndex] & 0xff) / 255.0f;
     }
-    */
-
-
 }

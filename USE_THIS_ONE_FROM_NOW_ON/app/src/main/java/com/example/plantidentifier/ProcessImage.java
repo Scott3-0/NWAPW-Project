@@ -6,14 +6,25 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 
 public class ProcessImage {
+
+    private TextView textView;
+    private ClassifyImage classifier;
+
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
-    public static Bitmap getBitmapFromView(View view, int width, int height) {
+    public Bitmap getBitmapFromView(View view, int width, int height) {
         if (width > 0 && height > 0) {
             view.measure(View.MeasureSpec.makeMeasureSpec(convertDpToPixels(width),
                     View.MeasureSpec.EXACTLY),
@@ -58,5 +69,37 @@ public class ProcessImage {
         //!What is 70???
         bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
         return stream.toByteArray();
+    }
+
+    //tflite tutorial
+    /** Classifies a frame from the preview stream. */
+    private void classifyFrame() {
+        if (classifier == null ) {
+            textView.setText("Uninitialized Classifier or invalid context.");
+            return;
+        }
+        Bitmap bitmap = Camera.getChosenImageBitmap();
+        textView = (TextView) View.findViewById(R.id.resultTextView);
+        String textToShow = classifier.classifyFrame(bitmap);
+        bitmap.recycle();
+        textView.setText(textToShow);
+    }
+
+
+    /** Connect the buttons to their event handler. */
+    @Override
+    public void onViewCreated(final View view) {
+        textView = (TextView) view.findViewById(R.id.text);
+    }
+
+    /** Load the model and labels. */
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        try {
+            classifier = new ImageClassifier(getActivity());
+        } catch (IOException e) {
+            Log.e(TAG, "Failed to initialize an image classifier.");
+        }
     }
 }
