@@ -9,10 +9,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.nio.ByteBuffer;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private String plant_type="daisy";
+
+    //image in byte buffer form
+    static public ByteBuffer chosenImageByteBuffer;
+
 
     protected void setPlantType(String newPlantType) {
         plant_type=newPlantType;

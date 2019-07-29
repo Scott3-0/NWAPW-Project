@@ -11,4 +11,5 @@
     <string name="temporary">results</string>
     <string name="choose_image">Choose Image</string>
     <string name="select">select</string>
+    <string name="error">error!</string>
 </resources>

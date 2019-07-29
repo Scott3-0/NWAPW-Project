@@ -23,18 +23,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
-
-import static android.app.Activity.RESULT_OK;
-
-import static android.app.Activity.RESULT_OK;
-import static com.example.plantidentifier.ClassifyImage.*;
-
+import java.nio.ByteBuffer;
 
 public class Camera extends AppCompatActivity {
 
@@ -75,12 +64,16 @@ public class Camera extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (classify == null) {
-                    textView.setText("classifier problem");
+                    textView.setText("error");
                     return;
                 }
-                String result = classify.classifyFrame(chosenImageBitmap);
 
-                textView.setText(result);
+                //do i need this?
+                //String result = classify.classifyFrame(chosenImageBitmap);
+                //textView.setText(result);
+
+                Intent intent = new Intent(Camera.this, DisplayPlantTypes.class);
+                startActivity(intent);
             }
         });
     }
