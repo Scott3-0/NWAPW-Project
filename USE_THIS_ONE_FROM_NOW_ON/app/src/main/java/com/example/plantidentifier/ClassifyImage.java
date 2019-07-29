@@ -21,7 +21,6 @@ import android.graphics.Bitmap;
 
 import android.app.Activity;
 import android.content.res.AssetFileDescriptor;
-import android.graphics.Bitmap;
 import android.os.SystemClock;
 import android.util.Log;
 import android.widget.TextView;
@@ -29,11 +28,17 @@ import android.widget.TextView;
 import static android.content.ContentValues.TAG;
 
 public class ClassifyImage {
-    //labels that allow you to classify the output
+    /* labels that allow you to classify the output */
     private List<String> labelList;
 
     //byteBuffer holds image data for the tflite file
     private ByteBuffer imgData = null;
+
+    //holds the location of the tflite model
+    private static final String modelPath = "androidModel.tflite";
+
+    //location of labels
+    private static final String labelPath = "flower_labels.csv";
 
     //image dimensions and size
     private static final int batchSize = 1;
@@ -58,7 +63,8 @@ public class ClassifyImage {
     private int[] intValues = new int[imageSizeX * imageSizeY];
 
     //how many results to show in UI
-    private static final int resultsToShow = 3;
+    private
+    final int resultsToShow = 3;
 
     private PriorityQueue<Map.Entry<String, Float>> sortedLabels =
             new PriorityQueue<>(
@@ -169,6 +175,7 @@ public class ClassifyImage {
     }
     //converts bitmap to byte buffer
     private void convertBitmapToByteBuffer(Bitmap bitmap) {
+
         if (imgData == null) {
             return;
         }

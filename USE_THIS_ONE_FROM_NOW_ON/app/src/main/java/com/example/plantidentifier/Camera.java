@@ -23,6 +23,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -32,6 +33,7 @@ import java.nio.channels.FileChannel;
 import static android.app.Activity.RESULT_OK;
 
 import static android.app.Activity.RESULT_OK;
+import static com.example.plantidentifier.ClassifyImage.*;
 
 
 public class Camera extends AppCompatActivity {
@@ -39,17 +41,14 @@ public class Camera extends AppCompatActivity {
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
+    private ClassifyImage classify;
+    private TextView textView;
+    Bitmap chosenImageBitmap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
-
-        Button goToResults = (Button) findViewById(R.id.selectButton);
-        goToResults.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Camera.this, DisplayPlantTypes.class);
-                startActivity(intent);
 
         Button chooseButton = (Button) findViewById(R.id.choose_image_btn);
         chooseButton.setOnClickListener(new View.OnClickListener() {
@@ -71,16 +70,26 @@ public class Camera extends AppCompatActivity {
             }
         });
 
+        Button goToResults = (Button) findViewById(R.id.selectButton);
+        goToResults.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (classify == null) {
+                    textView.setText("classifier problem");
+                    return;
+                }
+                String result = classify.classifyFrame(chosenImageBitmap);
+
+                textView.setText(result);
+            }
+        });
     }
 
-
-    Bitmap chosenImageBitmap;
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
         startActivityForResult(intent, IMAGE_PICK_CODE);
     }
-
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -96,6 +105,8 @@ public class Camera extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        ImageView imageView = findViewById(R.id.image_view);
+
         if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
             //imageView has the image in it. What we need to do is alter the image somehow.
             //this could mean altering a copy or altering R.id.image_view
@@ -103,7 +114,7 @@ public class Camera extends AppCompatActivity {
             //okay we may want to change the bitmap.config argument, otherwise maybe this works?
             chosenImageBitmap = ProcessImage.getBitmapFromView(getImageView(), getImageView().getWidth(), getImageView().getHeight());
             chosenImageBitmap = ProcessImage.resizeBitmap(chosenImageBitmap);
-            chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
+            //chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
             imageView.setImageBitmap(chosenImageBitmap);
 
         }
@@ -113,5 +124,6 @@ public class Camera extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.image_view);
         return imageView;
     }
+
 
 }
