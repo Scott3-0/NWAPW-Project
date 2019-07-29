@@ -54,7 +54,10 @@ public class Camera extends AppCompatActivity {
 
 
     }
+
+    //contains our chosen image. Should not be used until onActivityResult runs.
     Bitmap chosenImageBitmap;
+
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
@@ -85,7 +88,6 @@ public class Camera extends AppCompatActivity {
             chosenImageBitmap = ProcessImage.resizeBitmap(chosenImageBitmap);
             chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
             imageView.setImageBitmap(chosenImageBitmap);
-
         }
     }
 

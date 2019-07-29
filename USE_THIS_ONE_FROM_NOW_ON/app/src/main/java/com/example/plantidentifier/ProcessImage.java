@@ -12,8 +12,12 @@ import android.view.View;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
+import org.tensorflow.lite.Interpreter;
 
 public class ProcessImage {
+
+    //Interpreter tflite;
+    /*This was taken from a post */
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
     public static Bitmap getBitmapFromView(View view, int width, int height) {
         if (width > 0 && height > 0) {
@@ -77,7 +81,6 @@ public class ProcessImage {
                 int blue = Color.blue(pixel);
                 int alpha = Color.alpha(pixel);
                 //Log.i("Colors", "("+red+", "+green+", "+blue+")");
-
 
                 outputBitmap.setPixel(x, y, Color.argb(alpha, output[x][y], output[x][y], output[x][y]));
             }
