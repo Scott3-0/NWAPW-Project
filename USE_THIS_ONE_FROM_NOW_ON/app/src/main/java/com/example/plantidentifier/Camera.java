@@ -16,6 +16,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+<<<<<<< HEAD
+=======
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+
+import static android.app.Activity.RESULT_OK;
+
+import static android.app.Activity.RESULT_OK;
+import static com.example.plantidentifier.ClassifyImage.*;
+>>>>>>> Bronte's-Branch
 
 
 public class Camera extends AppCompatActivity {
@@ -23,11 +39,16 @@ public class Camera extends AppCompatActivity {
     private static final int PERMISSION_CODE = 1000;
     private static final int IMAGE_PICK_CODE = 1001;
 
+    private ClassifyImage classify;
+    private TextView textView;
+    Bitmap chosenImageBitmap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
+<<<<<<< HEAD
         Button goToResults = (Button) findViewById(R.id.selectButton);
         goToResults.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +59,8 @@ public class Camera extends AppCompatActivity {
 
         });
 
+=======
+>>>>>>> Bronte's-Branch
         Button chooseButton = (Button) findViewById(R.id.choose_image_btn);
         chooseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,10 +81,29 @@ public class Camera extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+=======
+        Button goToResults = (Button) findViewById(R.id.selectButton);
+        goToResults.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (classify == null) {
+                    textView.setText("classifier problem");
+                    return;
+                }
+                String result = classify.classifyFrame(chosenImageBitmap);
+>>>>>>> Bronte's-Branch
 
+                textView.setText(result);
+            }
+        });
+    }
 
+<<<<<<< HEAD
     }
     Bitmap chosenImageBitmap;
+=======
+>>>>>>> Bronte's-Branch
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
@@ -84,16 +126,25 @@ public class Camera extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         ImageView imageView = findViewById(R.id.image_view);
+<<<<<<< HEAD
         if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE) {
             Uri imageUri = data.getData();
             //imageView.setImageURI(imageUri);
             //imageView.setImageBitmap(getBitmap(imageUri));;
+=======
+
+        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK_CODE){
+>>>>>>> Bronte's-Branch
             //imageView has the image in it. What we need to do is alter the image somehow.
             //this could mean altering a copy or altering R.id.image_view
             imageView.setImageURI(data.getData());
             //okay we may want to change the bitmap.config argument, otherwise maybe this works?
             chosenImageBitmap = ProcessImage.getBitmapFromView(imageView, imageView.getWidth(), imageView.getHeight());
             chosenImageBitmap = ProcessImage.resizeBitmap(chosenImageBitmap);
+<<<<<<< HEAD
+=======
+            //chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
+>>>>>>> Bronte's-Branch
             imageView.setImageBitmap(chosenImageBitmap);
         }
     }
@@ -122,5 +173,6 @@ public class Camera extends AppCompatActivity {
         }
         return isFile;
     }
+
 
 }

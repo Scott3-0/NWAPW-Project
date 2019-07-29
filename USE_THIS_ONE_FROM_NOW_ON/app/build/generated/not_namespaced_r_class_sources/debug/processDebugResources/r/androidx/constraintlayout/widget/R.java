@@ -86,6 +86,7 @@ public final class R {
         public static final int spread = 0x7f0800a2;
         public static final int spread_inside = 0x7f0800a3;
         public static final int start = 0x7f0800a8;
+<<<<<<< HEAD
         public static final int top = 0x7f0800c3;
         public static final int wrap = 0x7f0800d2;
 =======
@@ -95,6 +96,10 @@ public final class R {
         public static final int top = 0x7f0800c2;
         public static final int wrap = 0x7f0800d1;
 >>>>>>> Stashed changes
+=======
+        public static final int top = 0x7f0800c4;
+        public static final int wrap = 0x7f0800d3;
+>>>>>>> Bronte's-Branch
     }
     public static final class styleable {
         private styleable() {}
