@@ -4,11 +4,14 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
 import java.io.ByteArrayOutputStream;
+import java.nio.ByteBuffer;
 
 public class ProcessImage {
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
@@ -57,5 +60,40 @@ public class ProcessImage {
         //!What is 70???
         bitmap.compress(Bitmap.CompressFormat.JPEG, 70, stream);
         return stream.toByteArray();
+    }
+
+    public static Bitmap grayscaleBitmap(Bitmap bitmap) {
+        int imgWidth = bitmap.getWidth();
+        int imgHeight = bitmap.getHeight();
+        int output[][]= new int[imgWidth][imgHeight];
+        Bitmap outputBitmap = bitmap;
+
+        for(int x = 0; x < imgWidth; x ++) {
+            for(int y = 0; y < imgHeight; y ++) {
+                //getPixel outputs hexadecimal ints
+                int pixel = bitmap.getPixel(x, y);
+                int red = Color.red(pixel);
+                int green = Color.green(pixel);
+                int blue = Color.blue(pixel);
+                int alpha = Color.alpha(pixel);
+                //Log.i("Colors", "("+red+", "+green+", "+blue+")");
+
+
+                outputBitmap.setPixel(x, y, Color.argb(alpha, output[x][y], output[x][y], output[x][y]));
+            }
+        }
+
+        return outputBitmap;
+    }
+
+    //convert a bitmap to a byteBuffer.
+    //https://stackoverflow.com/questions/10191871/converting-bitmap-to-bytearray-android
+    public ByteBuffer bitmapToByteBuffer (Bitmap b) {
+        int numBytes = b.getByteCount();
+
+        ByteBuffer buffer = ByteBuffer.allocate(numBytes);
+        b.copyPixelsToBuffer(buffer);
+
+        return buffer;
     }
 }
