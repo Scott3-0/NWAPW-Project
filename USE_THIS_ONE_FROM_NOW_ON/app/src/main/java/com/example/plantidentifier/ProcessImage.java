@@ -11,6 +11,7 @@ import android.util.TypedValue;
 import android.view.View;
 
 import java.io.ByteArrayOutputStream;
+import java.nio.ByteBuffer;
 
 public class ProcessImage {
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
@@ -61,7 +62,7 @@ public class ProcessImage {
         return stream.toByteArray();
     }
 
-    public static int[][] grayscaleBitmapArray(Bitmap bitmap) {
+    public static Bitmap grayscaleBitmap(Bitmap bitmap) {
         int imgWidth = bitmap.getWidth();
         int imgHeight = bitmap.getHeight();
         int output[][]= new int[imgWidth][imgHeight];
@@ -77,13 +78,22 @@ public class ProcessImage {
                 int alpha = Color.alpha(pixel);
                 //Log.i("Colors", "("+red+", "+green+", "+blue+")");
 
-                output[x][y] = (red+green+blue)/3;
 
                 outputBitmap.setPixel(x, y, Color.argb(alpha, output[x][y], output[x][y], output[x][y]));
             }
         }
 
-        return output;
-        //return outputBitmap;
+        return outputBitmap;
+    }
+
+    //convert a bitmap to a byteBuffer.
+    //https://stackoverflow.com/questions/10191871/converting-bitmap-to-bytearray-android
+    public ByteBuffer bitmapToByteBuffer (Bitmap b) {
+        int numBytes = b.getByteCount();
+
+        ByteBuffer buffer = ByteBuffer.allocate(numBytes);
+        b.copyPixelsToBuffer(buffer);
+
+        return buffer;
     }
 }
