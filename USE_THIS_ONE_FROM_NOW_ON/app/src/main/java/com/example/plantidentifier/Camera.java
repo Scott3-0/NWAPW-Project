@@ -44,6 +44,12 @@ public class Camera extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
+        Button goToResults = (Button) findViewById(R.id.selectButton);
+        goToResults.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Camera.this, DisplayPlantTypes.class);
+                startActivity(intent);
 
         Button chooseButton = (Button) findViewById(R.id.choose_image_btn);
         chooseButton.setOnClickListener(new View.OnClickListener() {
