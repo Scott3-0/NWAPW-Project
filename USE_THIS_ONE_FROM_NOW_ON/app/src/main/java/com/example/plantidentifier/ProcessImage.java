@@ -80,6 +80,7 @@ public class ProcessImage {
                 int green = Color.green(pixel);
                 int blue = Color.blue(pixel);
                 int alpha = Color.alpha(pixel);
+                output[x][y] = blue+red/2;
                 //Log.i("Colors", "("+red+", "+green+", "+blue+")");
 
                 outputBitmap.setPixel(x, y, Color.argb(alpha, output[x][y], output[x][y], output[x][y]));
@@ -91,7 +92,7 @@ public class ProcessImage {
 
     //convert a bitmap to a byteBuffer.
     //https://stackoverflow.com/questions/10191871/converting-bitmap-to-bytearray-android
-    public ByteBuffer bitmapToByteBuffer (Bitmap b) {
+    public static ByteBuffer bitmapToByteBuffer (Bitmap b) {
         int numBytes = b.getByteCount();
 
         ByteBuffer buffer = ByteBuffer.allocate(numBytes);
@@ -99,4 +100,22 @@ public class ProcessImage {
 
         return buffer;
     }
+
+    //TODO: write this function
+    public static ByteBuffer scaledByteBuffer (ByteBuffer b) {
+        return b; //change this
+    }
+
+    public static ByteBuffer preprocessImage(View view, int width, int height) {
+        Bitmap bitmap = getBitmapFromView(view, width, height);
+        bitmap = resizeBitmap(bitmap);
+        bitmap = grayscaleBitmap(bitmap);
+
+        ByteBuffer output = bitmapToByteBuffer(bitmap);
+        output = scaledByteBuffer(output);
+
+        return output;
+    }
+
+
 }

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.AssetFileDescriptor;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -18,13 +19,25 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.tensorflow.lite.Interpreter;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 
 
 public class Camera extends AppCompatActivity {
 
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
+    Button inferButton;
+    TextView outputPrediction;
+    Interpreter tflite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +69,7 @@ public class Camera extends AppCompatActivity {
     }
 
     //contains our chosen image. Should not be used until onActivityResult runs.
-    Bitmap chosenImageBitmap;
+    public static ByteBuffer chosenImageByteBuffer;
 
     private void pickImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
@@ -83,12 +96,26 @@ public class Camera extends AppCompatActivity {
             //imageView has the image in it. What we need to do is alter the image somehow.
             //this could mean altering a copy or altering R.id.image_view
             imageView.setImageURI(data.getData());
-            //okay we may want to change the bitmap.config argument, otherwise maybe this works?
-            chosenImageBitmap = ProcessImage.getBitmapFromView(imageView, imageView.getWidth(), imageView.getHeight());
-            chosenImageBitmap = ProcessImage.resizeBitmap(chosenImageBitmap);
-            chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
-            imageView.setImageBitmap(chosenImageBitmap);
+            //set chosenImageBytebuffer to a bytebuffer of the processed image
+            chosenImageByteBuffer = ProcessImage.preprocessImage(imageView, imageView.getWidth(), imageView.getHeight());
         }
+    }
+
+
+
+    /*This has got to be in an activity for some reason*/
+    private MappedByteBuffer loadModelFile() throws IOException {
+        AssetFileDescriptor fileDescriptor = null;
+        try {
+            fileDescriptor = this.getAssets().openFd("androidModel.tflite");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
+        FileChannel fileChannel = inputStream.getChannel();
+        long startOffset = fileDescriptor.getStartOffset();
+        long declaredLength = fileDescriptor.getDeclaredLength();
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
     }
 
 
