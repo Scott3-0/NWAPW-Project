@@ -64,11 +64,11 @@ public class ClassifyImage {
 
         //format bitmap into byte buffer
         //the following code has been edited and is from https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0 (accessed July 29, 2019), under this license: https://www.apache.org/licenses/LICENSE-2.0
-        MainActivity.chosenImageByteBuffer = ByteBuffer.allocateDirect(4 * sizeX * sizeY * pixelSize);
-        MainActivity.chosenImageByteBuffer.order(ByteOrder.nativeOrder());
+        Camera.chosenImageByteBuffer = ByteBuffer.allocateDirect(4 * sizeX * sizeY * pixelSize);
+        Camera.chosenImageByteBuffer.order(ByteOrder.nativeOrder());
 
         //run the model
-        tflite.run(MainActivity.chosenImageByteBuffer, labelProbArray);
+        tflite.run(Camera.chosenImageByteBuffer, labelProbArray);
 
         //analyze the results
 

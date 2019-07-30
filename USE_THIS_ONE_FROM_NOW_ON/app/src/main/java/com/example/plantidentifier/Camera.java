@@ -27,6 +27,9 @@ import java.nio.ByteBuffer;
 
 public class Camera extends AppCompatActivity {
 
+    //image in byte buffer form
+    static protected ByteBuffer chosenImageByteBuffer;
+
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
@@ -110,6 +113,8 @@ public class Camera extends AppCompatActivity {
             //chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
             imageView.setImageBitmap(chosenImageBitmap);
 
+            //set chosenImageBytebuffer to a bytebuffer of the processed image
+            chosenImageByteBuffer = ProcessImage.preprocessImage(imageView, imageView.getWidth(), imageView.getHeight());
         }
     }
 

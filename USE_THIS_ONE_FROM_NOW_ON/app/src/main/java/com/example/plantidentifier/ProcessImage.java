@@ -12,8 +12,12 @@ import android.view.View;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
+import org.tensorflow.lite.Interpreter;
 
 public class ProcessImage {
+
+    //Interpreter tflite;
+    /*This was taken from a post */
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
     public static Bitmap getBitmapFromView(View view, int width, int height) {
         if (width > 0 && height > 0) {
@@ -76,8 +80,8 @@ public class ProcessImage {
                 int green = Color.green(pixel);
                 int blue = Color.blue(pixel);
                 int alpha = Color.alpha(pixel);
+                output[x][y] = blue+red/2;
                 //Log.i("Colors", "("+red+", "+green+", "+blue+")");
-
 
                 outputBitmap.setPixel(x, y, Color.argb(alpha, output[x][y], output[x][y], output[x][y]));
             }
@@ -88,7 +92,7 @@ public class ProcessImage {
 
     //convert a bitmap to a byteBuffer.
     //https://stackoverflow.com/questions/10191871/converting-bitmap-to-bytearray-android
-    public ByteBuffer bitmapToByteBuffer (Bitmap b) {
+    public static ByteBuffer bitmapToByteBuffer (Bitmap b) {
         int numBytes = b.getByteCount();
 
         ByteBuffer buffer = ByteBuffer.allocate(numBytes);
@@ -96,4 +100,22 @@ public class ProcessImage {
 
         return buffer;
     }
+
+    //TODO: write this function
+    public static ByteBuffer scaledByteBuffer (ByteBuffer b) {
+        return b; //change this
+    }
+
+    public static ByteBuffer preprocessImage(View view, int width, int height) {
+        Bitmap bitmap = getBitmapFromView(view, width, height);
+        bitmap = resizeBitmap(bitmap);
+        bitmap = grayscaleBitmap(bitmap);
+
+        ByteBuffer output = bitmapToByteBuffer(bitmap);
+        output = scaledByteBuffer(output);
+
+        return output;
+    }
+
+
 }
