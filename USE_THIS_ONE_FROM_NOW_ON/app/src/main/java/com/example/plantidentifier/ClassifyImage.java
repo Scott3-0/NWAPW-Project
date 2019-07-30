@@ -98,8 +98,6 @@ public class ClassifyImage {
         flowerType = readLabel(maxProbLabel);
 
         tflite.close();
-
-        return flowerType;
     }
 
     //loads the file of the tflite model
