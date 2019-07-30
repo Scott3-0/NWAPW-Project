@@ -10,6 +10,10 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:2:1-10:12
+>>>>>>> Stashed changes
 =======
 MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:2:1-10:12
 >>>>>>> Stashed changes
@@ -77,6 +81,11 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:8:5-20
+MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:8:5-20
+>>>>>>> Stashed changes
 =======
 MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:8:5-20
 MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:8:5-20
@@ -142,6 +151,11 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mariakochi
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:5:5-6:41
+MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:5:5-6:41
+>>>>>>> Stashed changes
 =======
 MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:5:5-6:41
 MERGED from [org.tensorflow:tensorflow-lite:1.14.0] /Users/mariakochi/.gradle/caches/transforms-2/files-2.1/83e658b0baeb8e3da28919f99df62e60/AndroidManifest.xml:5:5-6:41
@@ -222,6 +236,10 @@ INJECTED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+		MERGED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
+>>>>>>> Stashed changes
 =======
 		MERGED from /Users/mariakochi/Documents/GitHub/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/src/main/AndroidManifest.xml
 >>>>>>> Stashed changes
