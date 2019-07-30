@@ -14,16 +14,12 @@ import java.nio.ByteBuffer;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String plant_type="daisy";
-
-    protected void setPlantType(String newPlantType) {
-        plant_type=newPlantType;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //ClassifyImage classifier = new ClassifyImage(getActivity());
 
         //button goes to image selection screen
         Button goToCamera = (Button) findViewById(R.id.toCamera);

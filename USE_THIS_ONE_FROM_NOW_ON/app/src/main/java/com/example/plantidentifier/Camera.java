@@ -3,6 +3,8 @@ package com.example.plantidentifier;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import org.tensorflow.lite.Interpreter;
+
+import android.app.Activity;
 import android.content.res.AssetFileDescriptor;
 
 import android.Manifest;
@@ -37,6 +39,12 @@ public class Camera extends AppCompatActivity {
     private TextView textView;
     Bitmap chosenImageBitmap;
 
+    private String flower = "";
+
+    Activity activity = new Activity();
+
+    ClassifyImage classifier = new ClassifyImage(activity);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,14 +74,10 @@ public class Camera extends AppCompatActivity {
         goToResults.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (classify == null) {
-                    textView.setText("error");
-                    return;
-                }
 
-                //do i need this?
-                //String result = classify.classifyFrame(chosenImageBitmap);
-                //textView.setText(result);
+                flower = ClassifyImage.classifyPlantType(activity);
+
+                textView.setText(flower);
 
                 Intent intent = new Intent(Camera.this, DisplayPlantTypes.class);
                 startActivity(intent);
