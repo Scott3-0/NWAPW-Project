@@ -43,23 +43,23 @@ public class Camera extends AppCompatActivity {
 
     private String flower = "";
 
-    Activity activity = new Activity();
+    //Activity activity = new Activity();
 
     ClassifyImage classifier;
-
-    public Camera (Activity activity) {
-
-        try {
-            classifier = new ClassifyImage(activity);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
+
+
+        {
+            try {
+                classifier = new ClassifyImage(this);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
         Button chooseButton = (Button) findViewById(R.id.choose_image_btn);
         chooseButton.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +87,7 @@ public class Camera extends AppCompatActivity {
             public void onClick(View view) {
 
                 try {
-                    flower = classifier.classifyPlantType(activity);
+                    flower = classifier.classifyPlantType();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

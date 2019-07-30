@@ -38,9 +38,10 @@ public class ClassifyImage {
     private static final String labelPath = "flowerLabels.txt";
 
     //dimensions of image
-    private static final int sizeX = 32;
-    private static final int sizeY = 32;
-    private static final int pixelSize = 3;
+    protected static final int sizeX = 32;
+    protected static final int sizeY = 32;
+    protected static final int pixelSize = 1;
+    public int[] sizeArray = new int[sizeX * sizeY];
 
     //labels as a 2D array
     private float[][] labelProbArray = null;
@@ -54,8 +55,6 @@ public class ClassifyImage {
 
     private String flowerType = "";
 
-    private Activity activity = new Activity();
-
     public ClassifyImage (Activity activity) throws IOException {
 
         //load the tflite model
@@ -66,18 +65,18 @@ public class ClassifyImage {
 
         //load the labels
         labels = loadLabelList(activity);
-    }
-
-    public String classifyPlantType(Activity activity) throws IOException {
 
         //format byte buffer
         //the following code has been edited and is from https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0 (accessed July 29, 2019), under this license: https://www.apache.org/licenses/LICENSE-2.0
         Camera.chosenImageByteBuffer = ByteBuffer.allocateDirect(4 * sizeX * sizeY * pixelSize);
 
         //do we need this?
-        // tflite.resizeInput();
+        //tflite.resizeInput(pixelSize, sizeArray);
 
         Camera.chosenImageByteBuffer.order(ByteOrder.nativeOrder());
+    }
+
+    public String classifyPlantType() throws IOException {
 
         //run the model
         try (Interpreter tflite = new Interpreter(NNModel)) {

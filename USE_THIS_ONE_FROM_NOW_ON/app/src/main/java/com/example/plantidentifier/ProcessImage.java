@@ -99,6 +99,7 @@ public class ProcessImage {
         b.copyPixelsToBuffer(buffer);
 
         return buffer;
+
     }
 
     //TODO: write this function
