@@ -39,10 +39,10 @@ public class ClassifyImage {
     private static final int pixelSize = 3;
 
     //labels as a 2D array
-    private float[][] labelProbArray;
+    private float[][] labelProbArray = null;
 
     //labels from file
-    private List<String> labels;
+    private List<String> labels= null;
 
     private Interpreter tflite;
 
