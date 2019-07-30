@@ -23,6 +23,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 public class Camera extends AppCompatActivity {
@@ -37,6 +39,18 @@ public class Camera extends AppCompatActivity {
     private TextView textView;
     Bitmap chosenImageBitmap;
 
+<<<<<<< Updated upstream
+=======
+    private String flower = "";
+
+    Activity activity = new Activity();
+
+    ClassifyImage classifier = new ClassifyImage(activity);
+
+    public Camera() throws IOException {
+    }
+
+>>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +77,7 @@ public class Camera extends AppCompatActivity {
         });
 
         Button goToResults = (Button) findViewById(R.id.selectButton);
+
         goToResults.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,9 +86,19 @@ public class Camera extends AppCompatActivity {
                     return;
                 }
 
+<<<<<<< Updated upstream
                 //do i need this?
                 //String result = classify.classifyFrame(chosenImageBitmap);
                 //textView.setText(result);
+=======
+                try {
+                    flower = classifier.classifyPlantType(activity);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                textView.setText(flower);
+>>>>>>> Stashed changes
 
                 Intent intent = new Intent(Camera.this, DisplayPlantTypes.class);
                 startActivity(intent);
