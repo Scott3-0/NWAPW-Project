@@ -25,6 +25,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 public class Camera extends AppCompatActivity {
@@ -43,7 +45,16 @@ public class Camera extends AppCompatActivity {
 
     Activity activity = new Activity();
 
-    ClassifyImage classifier = new ClassifyImage(activity);
+    ClassifyImage classifier;
+
+    public Camera (Activity activity) {
+
+        try {
+            classifier = new ClassifyImage(activity);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +86,11 @@ public class Camera extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                flower = ClassifyImage.classifyPlantType(activity);
+                try {
+                    flower = classifier.classifyPlantType(activity);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
                 textView.setText(flower);
 
