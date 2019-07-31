@@ -46,21 +46,19 @@ public class Camera extends AppCompatActivity {
 
     //Activity activity = new Activity();
 
-    ClassifyImage classifier;
+    //ClassifyImage classifier;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
-
-        {
-            try {
-                Log.e("Camera", "About to initialized classifyImage");
-                classifier = new ClassifyImage(this);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        try {
+            Log.e("Camera", "About to initialized classifyImage");
+            ClassifyImage classifier = new ClassifyImage(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.e("Camera", "did not initialize classifyImage");
         }
 
         Button chooseButton = (Button) findViewById(R.id.choose_image_btn);
