@@ -6,7 +6,7 @@ Hello! Welcome to our app--Plant Identifier. The purpose of this app is to allow
 
 The app is fairly straightforward--go to "identify plants!" and select a photo.** Currently, as this app is not properly connected to the tensorflow model, the "select" button will cause the app to quit. If you would like to see what the results screen will eventually look like, go back to the menu screen (using the arrow in the bottom menu) and select "Results".
 
-**you can download another image from chrome to select in app
+**you can download another image from chrome in the emulator to select in app
 
 Thank you!
 -Bronte, Elaine, Julissa, and Scott
