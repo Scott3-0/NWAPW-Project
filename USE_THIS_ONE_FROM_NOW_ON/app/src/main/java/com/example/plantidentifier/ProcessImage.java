@@ -101,8 +101,16 @@ public class ProcessImage {
         return buffer;
     }
 
-    //TODO: write this function
+    //I think this should work. Used http://www.java2s.com/Tutorial/Java/0180__File/CreateaByteBufferusingabytearray.htm and https://stackoverflow.com/questions/679298/gets-byte-array-from-a-bytebuffer-in-java
     public static ByteBuffer scaledByteBuffer (ByteBuffer b) {
+        byte[] arr = new byte[b.remaining()];
+        b.get(arr, 0, arr.length);
+
+        for(int i = 0; i < arr.length; i ++) {
+            arr[i] /= 255;
+        }
+
+        ByteBuffer buf = ByteBuffer.wrap(arr);
         return b; //change this
     }
 
