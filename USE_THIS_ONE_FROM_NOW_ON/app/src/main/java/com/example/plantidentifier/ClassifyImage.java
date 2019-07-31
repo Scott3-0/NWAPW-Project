@@ -43,11 +43,11 @@ public class ClassifyImage {
     protected static final int pixelSize = 1;
     public int[] sizeArray = new int[sizeX * sizeY];
 
+    //labels from file
+    private List<String> labels = null;
+
     //labels as a 2D array
     private float[][] labelProbArray = null;
-
-    //labels from file
-    private List<String> labels= null;
 
     private Interpreter tflite;
 
@@ -66,14 +66,25 @@ public class ClassifyImage {
         //load the labels
         labels = loadLabelList(activity);
 
-        //format byte buffer
-        //the following code has been edited and is from https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0 (accessed July 29, 2019), under this license: https://www.apache.org/licenses/LICENSE-2.0
-        Camera.chosenImageByteBuffer = ByteBuffer.allocateDirect(4 * sizeX * sizeY * pixelSize);
+        labelProbArray = new float[1][labels.size()];
+
+        if (Camera.chosenImageByteBuffer == null)
+        {
+            Log.e("ClassifyImage", "chosenImageByteBuffer = null");
+        }
+        else
+        {
+            Log.e("ClassifyImae", "chosenImageByteBuffer != null and is about to be resized");
+
+            //format byte buffer
+            //the following code has been edited and is from https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0 (accessed July 29, 2019), under this license: https://www.apache.org/licenses/LICENSE-2.0
+            Camera.chosenImageByteBuffer = ByteBuffer.allocateDirect(4 * sizeX * sizeY * pixelSize);
+
+            Camera.chosenImageByteBuffer.order(ByteOrder.nativeOrder());
+        }
 
         //do we need this?
         //tflite.resizeInput(pixelSize, sizeArray);
-
-        Camera.chosenImageByteBuffer.order(ByteOrder.nativeOrder());
     }
 
     public String classifyPlantType() throws IOException {
