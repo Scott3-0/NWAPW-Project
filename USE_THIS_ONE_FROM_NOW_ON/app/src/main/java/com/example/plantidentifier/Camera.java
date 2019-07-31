@@ -2,29 +2,18 @@ package com.example.plantidentifier;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import org.tensorflow.lite.Interpreter;
-
-import android.app.Activity;
-import android.content.res.AssetFileDescriptor;
 
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -38,15 +27,13 @@ public class Camera extends AppCompatActivity {
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
-    private ClassifyImage classify;
     private TextView textView;
     Bitmap chosenImageBitmap;
 
     private String flower = "";
 
-    //Activity activity = new Activity();
+    ClassifyImage classifier;
 
-    //ClassifyImage classifier;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +42,7 @@ public class Camera extends AppCompatActivity {
 
         try {
             Log.e("Camera", "About to initialized classifyImage");
-            ClassifyImage classifier = new ClassifyImage(this);
+            classifier = new ClassifyImage(this);
         } catch (IOException e) {
             e.printStackTrace();
             Log.e("Camera", "did not initialize classifyImage");
