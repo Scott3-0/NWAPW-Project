@@ -88,7 +88,7 @@ public class ClassifyImage {
         try (Interpreter tflite = new Interpreter(NNModel)) {
 
             //do we need this? also should this be here?
-            tflite.resizeInput(pixelSize, sizeArray);
+            //tflite.resizeInput(1,);
 
             tflite.run(Camera.chosenImageByteBuffer, labelProbArray);
 
