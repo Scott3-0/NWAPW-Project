@@ -145,6 +145,7 @@ public class Camera extends AppCompatActivity {
             Log.e("Camera", "about to initialize chosenImageByteBuffer");
             //set chosenImageBytebuffer to a bytebuffer of the processed image
             chosenImageByteBuffer = ProcessImage.preprocessImage(imageView, imageView.getWidth(), imageView.getHeight());
+            Log.e("Camera", "numBytes: " + Integer.toString(chosenImageByteBuffer.remaining()));
             if (chosenImageByteBuffer == null)
             {
                 Log.e("Camera", "chosenImageByteBuffer == null because problem is in processImage.java");

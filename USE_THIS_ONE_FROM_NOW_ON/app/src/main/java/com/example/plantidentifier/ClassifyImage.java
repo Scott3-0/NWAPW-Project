@@ -49,8 +49,6 @@ public class ClassifyImage {
     //labels as a 2D array
     private float[][] labelProbArray = null;
 
-    private Interpreter tflite;
-
     private MappedByteBuffer NNModel;
 
     private String flowerType = "";
@@ -82,16 +80,19 @@ public class ClassifyImage {
 
             Camera.chosenImageByteBuffer.order(ByteOrder.nativeOrder());
         }
-
-        //do we need this?
-        //tflite.resizeInput(pixelSize, sizeArray);
     }
 
     public String classifyPlantType() throws IOException {
 
         //run the model
         try (Interpreter tflite = new Interpreter(NNModel)) {
+
+            //do we need this? also should this be here?
+            tflite.resizeInput(pixelSize, sizeArray);
+
             tflite.run(Camera.chosenImageByteBuffer, labelProbArray);
+
+            tflite.close();
         }
 
         //analyze the results
@@ -106,8 +107,6 @@ public class ClassifyImage {
 
         //read text file to get label
         flowerType = readLabel(maxProbLabel);
-
-        tflite.close();
 
         return flowerType;
     }

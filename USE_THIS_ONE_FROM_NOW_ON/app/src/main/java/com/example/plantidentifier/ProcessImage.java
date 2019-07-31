@@ -93,12 +93,13 @@ public class ProcessImage {
     //https://stackoverflow.com/questions/10191871/converting-bitmap-to-bytearray-android
     public static ByteBuffer bitmapToByteBuffer (Bitmap b) {
         int numBytes = b.getByteCount();
-        Log.e("ProcessImage", "numBytes: " + Integer.toString(numBytes));
         ByteBuffer buffer = ByteBuffer.allocate(numBytes);
         b.copyPixelsToBuffer(buffer);
+        buffer.rewind();
+
+        Log.e("ProcessImage", "numBytes: " + Integer.toString(buffer.remaining()));
 
         return buffer;
-
     }
 
     //TODO: write this function
