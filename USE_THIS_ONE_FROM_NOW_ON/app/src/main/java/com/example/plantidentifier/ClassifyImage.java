@@ -35,7 +35,7 @@ public class ClassifyImage {
 
     private static final String modelPath = "YEEES.tflite";
 
-    private static final String labelPath = "flowerLabels.txt";
+    private static final String labelPath = "flower_labels.csv";
 
     //dimensions of image
     protected static final int sizeX = 32;
