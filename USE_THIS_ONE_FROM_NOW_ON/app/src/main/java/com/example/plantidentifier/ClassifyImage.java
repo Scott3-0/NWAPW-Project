@@ -33,7 +33,7 @@ import static android.content.ContentValues.TAG;
 
 public class ClassifyImage {
 
-    private static final String modelPath = "androidModel.tflite";
+    private static final String modelPath = "YEEES.tflite";
 
     private static final String labelPath = "flowerLabels.txt";
 
