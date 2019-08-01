@@ -27,10 +27,9 @@ public class Camera extends AppCompatActivity {
     private static final int IMAGE_PICK_CODE = 1000;
     private static final int PERMISSION_CODE = 1001;
 
-    private TextView textView;
     Bitmap chosenImageBitmap;
 
-    private String flower = "";
+    public static String flower = "";
 
     ClassifyImage classifier;
 
@@ -80,8 +79,6 @@ public class Camera extends AppCompatActivity {
                     e.printStackTrace();
                     Log.e("Camera", "Can't run instance of classifier.classifyPlantType");
                 }
-
-                //textView.setText(flower);
 
                 Intent intent = new Intent(Camera.this, DisplayPlantTypes.class);
                 startActivity(intent);

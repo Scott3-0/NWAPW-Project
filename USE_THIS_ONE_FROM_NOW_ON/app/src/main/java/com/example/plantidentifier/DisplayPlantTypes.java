@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class DisplayPlantTypes extends AppCompatActivity {
 
@@ -13,6 +14,10 @@ public class DisplayPlantTypes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_plant_types);
+
+        TextView textView = (TextView) findViewById(R.id.resultTextView);
+
+        textView.setText(Camera.flower);
 
         /**Do note that there is a cleaner way to do this, but I don't quite understand
          * how it works so I'm leaving the buttons like this for now*/

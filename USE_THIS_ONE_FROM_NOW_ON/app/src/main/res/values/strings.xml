@@ -7,7 +7,7 @@
     <string name="menu">Menu</string>
     <string name="plant_is">Your plant is most likely a(n)</string>
     <string name="more_possibilities">more possibilities</string>
-    <string name="plant_type">daisy</string>
+    <string name="plantType">daisy</string>
     <string name="temporary">results</string>
     <string name="choose_image">Choose Image</string>
     <string name="select">select</string>

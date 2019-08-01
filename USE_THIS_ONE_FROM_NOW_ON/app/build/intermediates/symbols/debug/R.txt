@@ -1370,8 +1370,8 @@ int string path_password_eye 0x7f0d0036
 int string path_password_eye_mask_strike_through 0x7f0d0037
 int string path_password_eye_mask_visible 0x7f0d0038
 int string path_password_strike_through 0x7f0d0039
-int string plant_is 0x7f0d003a
-int string plant_type 0x7f0d003b
+int string plantType 0x7f0d003a
+int string plant_is 0x7f0d003b
 int string search_menu_title 0x7f0d003c
 int string search_plants 0x7f0d003d
 int string select 0x7f0d003e

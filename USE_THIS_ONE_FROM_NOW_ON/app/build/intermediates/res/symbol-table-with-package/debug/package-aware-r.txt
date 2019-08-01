@@ -1371,8 +1371,8 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string plantType
 string plant_is
-string plant_type
 string search_menu_title
 string search_plants
 string select
