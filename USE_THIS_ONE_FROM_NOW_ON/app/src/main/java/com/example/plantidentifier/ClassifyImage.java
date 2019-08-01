@@ -101,7 +101,7 @@ public class ClassifyImage {
         int maxProbLabel = 0;
         for (int ii = 0; ii < labelProbArray[0].length; ++ii)
         {
-            if(labelProbArray[ii][1] > labelProbArray[maxProbLabel][1]) {
+            if(labelProbArray[1][ii] > labelProbArray[1][maxProbLabel]) {
                 maxProbLabel = ii;
             }
         }
