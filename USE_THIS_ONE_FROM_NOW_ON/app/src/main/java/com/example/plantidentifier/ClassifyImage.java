@@ -94,6 +94,7 @@ public class ClassifyImage {
             //do we need this? also should this be here?
             //tflite.resizeInput(1, new int[9]);
 
+
             tflite.run(Camera.chosenImageByteBuffer, labelProbArray);
 
             tflite.close();
@@ -108,11 +109,9 @@ public class ClassifyImage {
         int maxProbLabel = 0;
         for (int ii = 0; ii < labelProbArray[0].length; ii++)
         {
-            if (ii != 58 && ii!=56) {
-                Log.e("ClassifyImage", "ii: " + Float.toString(ii));
-                if (labelProbArray[0][ii] > labelProbArray[0][maxProbLabel]) {
-                    maxProbLabel = ii;
-                }
+            Log.e("ClassifyImage", "ii: " + Float.toString(ii));
+            if (labelProbArray[0][ii] > labelProbArray[0][maxProbLabel]) {
+                maxProbLabel = ii;
             }
         }
 

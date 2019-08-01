@@ -11,7 +11,10 @@ import android.util.TypedValue;
 import android.view.View;
 
 import java.io.ByteArrayOutputStream;
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+
 import org.tensorflow.lite.Interpreter;
 
 public class ProcessImage {
@@ -103,28 +106,36 @@ public class ProcessImage {
     }
 
     //TODO: write this function
-    public static ByteBuffer scaledByteBuffer (ByteBuffer b) {
+    public static ByteBuffer scaledByteBuffer (Bitmap b) throws UnsupportedEncodingException {
         //dont know if this works
-        byte[] arr = new byte[b.remaining()];
-        b.get(arr, 0, arr.length);
-
-        for(int i = 0; i < arr.length; i ++)
-        {
-            arr[i] /= 255;
+        ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4*4*32*32*1);
+        byteBuffer.order(ByteOrder.nativeOrder());
+        int[] intValues = new int[32*32];
+        b.getPixels(intValues, 0, b.getWidth(), 0, 0, b.getWidth(), b.getHeight());
+        int pixel = 0;
+        for(int i = 0; i < 32; ++i){
+            for(int j = 0; j < 32; ++j) {
+                final int val = intValues[pixel++];
+                byteBuffer.putFloat(((val >> 16) & 0xFF)/255.0f);
+                byteBuffer.putFloat(((val >> 8) & 0xFF)/255.0f);
+                byteBuffer.putFloat(((val) & 0xFF)/255.0f);
+            }
         }
 
-        ByteBuffer buf = ByteBuffer.wrap(arr);
+        //Log.e("ProcessImage", byteBuffer[0].toString());
+        String converted = new String(byteBuffer.array(), "UTF-8");
+        Log.e("ProcessImage", converted);
 
-        return buf; //change this
+        return byteBuffer;
     }
 
-    public static ByteBuffer preprocessImage(View view, int width, int height) {
+    public static ByteBuffer preprocessImage(View view, int width, int height) throws UnsupportedEncodingException{
         Bitmap bitmap = getBitmapFromView(view, width, height);
         bitmap = resizeBitmap(bitmap);
         bitmap = grayscaleBitmap(bitmap);
 
-        ByteBuffer output = bitmapToByteBuffer(bitmap);
-        output = scaledByteBuffer(output);
+        //ByteBuffer output = bitmapToByteBuffer(bitmap);
+        ByteBuffer output = scaledByteBuffer(bitmap);
 
         return output;
     }

@@ -17,6 +17,7 @@ import android.widget.Toast;
 import android.widget.TextView;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 
 public class Camera extends AppCompatActivity {
@@ -122,12 +123,16 @@ public class Camera extends AppCompatActivity {
             chosenImageBitmap = ProcessImage.getBitmapFromView(getImageView(), getImageView().getWidth(), getImageView().getHeight());
             Log.e("Camera", "about to resize bitmap");
             chosenImageBitmap = ProcessImage.resizeBitmap(chosenImageBitmap);
-            //chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
+            chosenImageBitmap = ProcessImage.grayscaleBitmap(chosenImageBitmap);
             imageView.setImageBitmap(chosenImageBitmap);
 
             Log.e("Camera", "about to initialize chosenImageByteBuffer");
             //set chosenImageBytebuffer to a bytebuffer of the processed image
-            chosenImageByteBuffer = ProcessImage.preprocessImage(imageView, imageView.getWidth(), imageView.getHeight());
+            try{
+                chosenImageByteBuffer = ProcessImage.preprocessImage(imageView, imageView.getWidth(), imageView.getHeight());
+            }catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
             Log.e("Camera", "numBytes: " + Integer.toString(chosenImageByteBuffer.remaining()));
             if (chosenImageByteBuffer == null)
             {
