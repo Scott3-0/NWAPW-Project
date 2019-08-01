@@ -99,13 +99,20 @@ public class ClassifyImage {
             tflite.close();
         }
 
+        for (int ii = 0; ii < 103; ii++)
+        {
+            Log.e("ClassifyImage", "Testing " + Float.toString(ii) + ": " + Float.toString(labelProbArray[0][ii]));
+        }
         //analyze the results
         //sort the data with the largest prob in position 3
         int maxProbLabel = 0;
         for (int ii = 0; ii < labelProbArray[0].length; ii++)
         {
-            if(labelProbArray[0][ii] > labelProbArray[0][maxProbLabel]) {
-                maxProbLabel = ii;
+            if (ii != 58 && ii!=56) {
+                Log.e("ClassifyImage", "ii: " + Float.toString(ii));
+                if (labelProbArray[0][ii] > labelProbArray[0][maxProbLabel]) {
+                    maxProbLabel = ii;
+                }
             }
         }
 
@@ -113,6 +120,7 @@ public class ClassifyImage {
 
         //read text file to get label
         Log.e("ClassifyImage", "type: " + labels.get(maxProbLabel));
+        Log.e("ClassifyImage", "Testing" + labels.get(6));
         flowerType = labels.get(maxProbLabel);
 
         Log.e("ClassifyImage", "flowerType: " + flowerType);
