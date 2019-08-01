@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PlantIdentifier</string>
+    <string name="app_name">PlantID</string>
     <string name="welcome">Welcome!</string>
     <string name="text_filler">Do you often see plants and wish you knew what they were? This app is for you! \"Identify Plants\" will prompt you to choose a photo of a plant from your phone. You will then know what your plant is and have the opportunity to look up more information about it. Enjoy!</string>
     <string name="identify_plants">Identify plants!</string>
