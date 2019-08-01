@@ -65,6 +65,11 @@ public class ClassifyImage {
         labels = loadLabelList(activity);
 
         labelProbArray = new float[1][labels.size()];
+        Log.e("ClassifyImage", "labelList size: " + labels.size());
+
+    }
+
+    public String classifyPlantType() throws IOException {
 
         if (Camera.chosenImageByteBuffer == null)
         {
@@ -80,15 +85,14 @@ public class ClassifyImage {
 
             Camera.chosenImageByteBuffer.order(ByteOrder.nativeOrder());
         }
-    }
 
-    public String classifyPlantType() throws IOException {
+
 
         //run the model
         try (Interpreter tflite = new Interpreter(NNModel)) {
 
             //do we need this? also should this be here?
-            tflite.resizeInput(1, new int[9]);
+            //tflite.resizeInput(1, new int[9]);
 
             tflite.run(Camera.chosenImageByteBuffer, labelProbArray);
 
