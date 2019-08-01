@@ -80,6 +80,7 @@ public class Camera extends AppCompatActivity {
                     Log.e("Camera", "Can't run instance of classifier.classifyPlantType");
                 }
 
+                Log.e("Camera", "flower is a... " + ClassifyImage.flowerType);
                 Intent intent = new Intent(Camera.this, DisplayPlantTypes.class);
                 startActivity(intent);
             }

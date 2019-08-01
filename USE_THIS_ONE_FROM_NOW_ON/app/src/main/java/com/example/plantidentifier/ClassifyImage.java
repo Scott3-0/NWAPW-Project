@@ -51,7 +51,7 @@ public class ClassifyImage {
 
     private MappedByteBuffer NNModel;
 
-    private String flowerType = "";
+    public static String flowerType = "";
 
     public ClassifyImage (Activity activity) throws IOException {
 
@@ -112,7 +112,8 @@ public class ClassifyImage {
         Log.e("ClassifyImage", "maxProbLabel: " + maxProbLabel);
 
         //read text file to get label
-        flowerType = readLabel(maxProbLabel);
+        Log.e("ClassifyImage", "type: " + labels.get(maxProbLabel));
+        flowerType = labels.get(maxProbLabel);
 
         Log.e("ClassifyImage", "flowerType: " + flowerType);
 
