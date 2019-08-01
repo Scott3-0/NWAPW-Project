@@ -1057,7 +1057,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button
 id buttonPanel
 id center
 id center_horizontal
@@ -1108,7 +1107,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageButton
 id image_view
 id info
 id invisible
