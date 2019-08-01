@@ -35,7 +35,7 @@ public class ClassifyImage {
 
     private static final String modelPath = "YEEES.tflite";
 
-    private static final String labelPath = "flower_labels.csv";
+    private static final String labelPath = "FlowerLabels.txt";
 
     //dimensions of image
     protected static final int sizeX = 32;
@@ -64,7 +64,7 @@ public class ClassifyImage {
         //load the labels
         labels = loadLabelList(activity);
 
-        labelProbArray = new float[1][103];
+        labelProbArray = new float[1][labels.size()];
         Log.e("ClassifyImage", "labelList size: " + labels.size());
 
     }
@@ -104,13 +104,17 @@ public class ClassifyImage {
         int maxProbLabel = 0;
         for (int ii = 0; ii < labelProbArray[0].length; ii++)
         {
-            if(labelProbArray[1][ii] > labelProbArray[1][maxProbLabel]) {
+            if(labelProbArray[0][ii] > labelProbArray[0][maxProbLabel]) {
                 maxProbLabel = ii;
             }
         }
 
+        Log.e("ClassifyImage", "maxProbLabel: " + maxProbLabel);
+
         //read text file to get label
         flowerType = readLabel(maxProbLabel);
+
+        Log.e("ClassifyImage", "flowerType: " + flowerType);
 
         return flowerType;
     }
