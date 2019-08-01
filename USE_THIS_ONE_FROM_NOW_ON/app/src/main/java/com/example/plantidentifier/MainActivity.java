@@ -32,17 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        //button goes to results screen
-        Button goToResults = (Button) findViewById(R.id.temporaryButton);
-        goToResults.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, DisplayPlantTypes.class);
-                startActivity(intent);
-            }
-
-        });
-
     }
 
 }
