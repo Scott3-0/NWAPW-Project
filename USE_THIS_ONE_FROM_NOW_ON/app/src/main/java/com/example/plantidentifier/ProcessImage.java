@@ -112,6 +112,7 @@ public class ProcessImage {
 
         ByteBuffer buf = ByteBuffer.wrap(arr);
         return b; //change this
+        return buf; //change this
     }
 
     public static ByteBuffer preprocessImage(View view, int width, int height) {
