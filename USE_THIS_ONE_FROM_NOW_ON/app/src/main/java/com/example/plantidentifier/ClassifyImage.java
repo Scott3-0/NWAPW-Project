@@ -64,7 +64,7 @@ public class ClassifyImage {
         //load the labels
         labels = loadLabelList(activity);
 
-        labelProbArray = new float[1][labels.size()];
+        labelProbArray = new float[1][103];
         Log.e("ClassifyImage", "labelList size: " + labels.size());
 
     }
@@ -102,9 +102,9 @@ public class ClassifyImage {
         //analyze the results
         //sort the data with the largest prob in position 3
         int maxProbLabel = 0;
-        for (int ii = 0; ii < labelProbArray[0].length; ++ii)
+        for (int ii = 0; ii < labelProbArray[0].length; ii++)
         {
-            if(labelProbArray[ii][1] > labelProbArray[maxProbLabel][1]) {
+            if(labelProbArray[1][ii] > labelProbArray[1][maxProbLabel]) {
                 maxProbLabel = ii;
             }
         }
