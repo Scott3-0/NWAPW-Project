@@ -3,27 +3,23 @@ package com.example.plantidentifier;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import java.io.IOException;
-import java.nio.MappedByteBuffer;
+import java.nio.ByteBuffer;
+
 
 public class MainActivity extends AppCompatActivity {
-
-    private String plant_type="daisy";
-
-    protected void setPlantType(String newPlantType) {
-        plant_type=newPlantType;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //ClassifyImage classifier = new ClassifyImage(getActivity());
 
         //button goes to image selection screen
         Button goToCamera = (Button) findViewById(R.id.toCamera);

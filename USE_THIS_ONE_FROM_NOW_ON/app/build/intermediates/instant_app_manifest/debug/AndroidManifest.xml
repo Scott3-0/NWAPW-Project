@@ -20,6 +20,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.plantidentifier.ClassifyImageActivity" />
         <activity android:name="com.example.plantidentifier.DisplayPlantTypes" />
         <activity android:name="com.example.plantidentifier.Camera" />
         <activity android:name="com.example.plantidentifier.MainActivity" >

@@ -1170,6 +1170,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectButton
 id select_dialog_listview
 id selected
 id shortcut
@@ -1203,6 +1204,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView2
 id textView3
 id textView4
@@ -1356,6 +1358,7 @@ string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
 string choose_image
+string error
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1372,6 +1375,7 @@ string plant_is
 string plant_type
 string search_menu_title
 string search_plants
+string select
 string status_bar_notification_info_overflow
 string temporary
 string text_filler

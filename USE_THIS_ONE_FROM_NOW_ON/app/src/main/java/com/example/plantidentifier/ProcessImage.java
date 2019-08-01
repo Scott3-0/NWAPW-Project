@@ -20,6 +20,7 @@ public class ProcessImage {
     /*This was taken from a post */
     //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
     public static Bitmap getBitmapFromView(View view, int width, int height) {
+
         if (width > 0 && height > 0) {
             view.measure(View.MeasureSpec.makeMeasureSpec(convertDpToPixels(width),
                     View.MeasureSpec.EXACTLY),
@@ -27,17 +28,15 @@ public class ProcessImage {
                             View.MeasureSpec.EXACTLY));
         }
         view.layout(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight());
-
-        Bitmap bitmap = Bitmap.createBitmap(view.getMeasuredWidth(),
-                view.getMeasuredHeight(), Bitmap.Config.ARGB_8888);
+        Bitmap bitmap = Bitmap.createBitmap(width,
+                height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         Drawable background = view.getBackground();
-
         if (background != null) {
+
             background.draw(canvas);
         }
         view.draw(canvas);
-
         return bitmap;
     }
 
@@ -94,24 +93,28 @@ public class ProcessImage {
     //https://stackoverflow.com/questions/10191871/converting-bitmap-to-bytearray-android
     public static ByteBuffer bitmapToByteBuffer (Bitmap b) {
         int numBytes = b.getByteCount();
-
         ByteBuffer buffer = ByteBuffer.allocate(numBytes);
         b.copyPixelsToBuffer(buffer);
+        buffer.rewind();
+
+        Log.e("ProcessImage", "numBytes: " + Integer.toString(buffer.remaining()));
 
         return buffer;
     }
 
-    //I think this should work. Used http://www.java2s.com/Tutorial/Java/0180__File/CreateaByteBufferusingabytearray.htm and https://stackoverflow.com/questions/679298/gets-byte-array-from-a-bytebuffer-in-java
+    //TODO: write this function
     public static ByteBuffer scaledByteBuffer (ByteBuffer b) {
+        //dont know if this works
         byte[] arr = new byte[b.remaining()];
         b.get(arr, 0, arr.length);
 
-        for(int i = 0; i < arr.length; i ++) {
+        for(int i = 0; i < arr.length; i ++)
+        {
             arr[i] /= 255;
         }
 
         ByteBuffer buf = ByteBuffer.wrap(arr);
-        return b; //change this
+
         return buf; //change this
     }
 

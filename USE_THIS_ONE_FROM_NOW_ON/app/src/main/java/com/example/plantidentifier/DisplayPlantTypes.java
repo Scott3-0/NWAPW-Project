@@ -40,4 +40,7 @@ public class DisplayPlantTypes extends AppCompatActivity {
 
     }
 
+    private void defineButtons() {
+
+    }
 }
