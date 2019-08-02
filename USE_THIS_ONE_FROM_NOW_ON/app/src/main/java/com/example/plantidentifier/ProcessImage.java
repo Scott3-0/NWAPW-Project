@@ -20,8 +20,7 @@ import org.tensorflow.lite.Interpreter;
 public class ProcessImage {
 
     //Interpreter tflite;
-    /*This was taken from a post */
-    //https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck
+    /*The following code has been taken from https://dev.to/pranavpandey/android-create-bitmap-from-a-view-3lck (accessed July 26, 2019)*/
     public static Bitmap getBitmapFromView(View view, int width, int height) {
 
         if (width > 0 && height > 0) {
@@ -43,13 +42,13 @@ public class ProcessImage {
         return bitmap;
     }
 
-    //Same as above source
+    //The following code has been taken from https://github.com/pranavpandey/dynamic-utils/blob/df2fa843cd1ed0b9fd7c80e236bc99a40d546bba/dynamic-utils/src/main/java/com/pranavpandey/android/dynamic/utils/DynamicUnitUtils.java#L34 (Accessed July 26, 2019)
     public static int convertDpToPixels(float dp) {
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 dp, Resources.getSystem().getDisplayMetrics()));
     }
 
-    //https://stackoverflow.com/questions/4837715/how-to-resize-a-bitmap-in-android
+    //The following code has been taken and modified from https://stackoverflow.com/questions/4837715/how-to-resize-a-bitmap-in-android (accessed July 26, 2019)
     public static Bitmap resizeBitmap(Bitmap bitmap) {
         byte[] imageAsBytes = getBytesFromBitmap(bitmap);
         //b is a _____ of the inputted bitmap.
@@ -60,7 +59,7 @@ public class ProcessImage {
         return resizedImage;
     }
 
-    //https://stackoverflow.com/questions/10513976/how-to-convert-image-into-byte-array-and-byte-array-to-base64-string-in-android
+    //The following code has been taken from https://stackoverflow.com/questions/10513976/how-to-convert-image-into-byte-array-and-byte-array-to-base64-string-in-android (accessed July 29, 2019)
     public static byte[] getBytesFromBitmap(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         //!What is 70???
@@ -79,10 +78,10 @@ public class ProcessImage {
                 //getPixel outputs hexadecimal ints
                 int pixel = bitmap.getPixel(x, y);
                 int red = Color.red(pixel);
-                int green = Color.green(pixel);
+                //int green = Color.green(pixel);
                 int blue = Color.blue(pixel);
                 int alpha = Color.alpha(pixel);
-                output[x][y] = blue+red/2;
+                output[x][y] = (blue+red)/2;
                 //Log.i("Colors", "("+red+", "+green+", "+blue+")");
 
                 outputBitmap.setPixel(x, y, Color.argb(alpha, output[x][y], output[x][y], output[x][y]));
@@ -92,20 +91,9 @@ public class ProcessImage {
         return outputBitmap;
     }
 
-    //convert a bitmap to a byteBuffer.
-    //https://stackoverflow.com/questions/10191871/converting-bitmap-to-bytearray-android
-    public static ByteBuffer bitmapToByteBuffer (Bitmap b) {
-        int numBytes = b.getByteCount();
-        ByteBuffer buffer = ByteBuffer.allocate(numBytes);
-        b.copyPixelsToBuffer(buffer);
-        buffer.rewind();
 
-        Log.e("ProcessImage", "numBytes: " + Integer.toString(buffer.remaining()));
 
-        return buffer;
-    }
-
-    //TODO: write this function
+    //The following code is taken and modified from https://github.com/ZZANZUPROJECT/TFLite-Object-Detection/blob/master/app/src/main/java/com/example/android/alarmapp/tflite/TensorFlowImageClassifier.java (accessed August 1, 2019)
     public static ByteBuffer scaledByteBuffer (Bitmap b) throws UnsupportedEncodingException {
         //dont know if this works
         ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4*4*32*32*1);
