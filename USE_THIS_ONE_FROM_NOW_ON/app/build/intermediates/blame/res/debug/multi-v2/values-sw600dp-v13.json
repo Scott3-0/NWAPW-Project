@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\esdem\\Documents\\GitHub\\NWAPW-Project\\USE_THIS_ONE_FROM_NOW_ON\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "/Users/Bronte/Documents/NWAPW/NWAPW-Project/USE_THIS_ONE_FROM_NOW_ON/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\db50398d5bbb6d78784c429bc1cd0a55\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1471933d34e45cd98a911e4f18526cff/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\esdem\\.gradle\\caches\\transforms-2\\files-2.1\\26fd7e52a58fb50c67b983154d6c68e9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "/Users/Bronte/.gradle/caches/transforms-2/files-2.1/1446dd51a52a89a8c7901f1febfd4b4b/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
